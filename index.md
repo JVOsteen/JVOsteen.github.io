@@ -16,23 +16,28 @@ I'm originally from Seattle, Washington but I attended high school in Evanston, 
 If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
-American University, Center for Data Science, 
-: September 2020–Present
+American University, Center for Data Science 
+: _September 2020–Present_
 : Undergraduate Research Fellow
 
-Blue Compass Strategies, January 2020–August 2020
+Blue Compass Strategies 
+: _January 2020–August 2020_
 : Political & Research Fellow
 
-Northwestern University, Center for Talent Development, June 2019–August 2019
+Northwestern University, Center for Talent Development
+: _June 2019–August 2019_
 : Teaching Assistant
 
-American University, Humanities Truck, January 2019–May 2019
+American University, Humanities Truck
+: _January 2019–May 2019_
 : Contributing Researcher
 
-McGaw YMCA, June 2018–July 2018
-: Enrichment Leader :
+McGaw YMCA
+: _June 2018–July 2018_
+: Enrichment Leader
 
-Jan Schakowsky for Congress, June 2017–August 2017
+Jan Schakowsky for Congress
+: _June 2017–August 2017_
 : Intern
 
 ### Research
