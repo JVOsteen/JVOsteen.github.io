@@ -8,7 +8,7 @@ I'm interested in **statistical modeling**, **data science**, **voter behavior**
 
 In addition to coding, I love doing research and data science. [Check out my research.](./#research)
 
-I'm a TA for CS61B, Berkeley's Data Structures course. [Look through my teaching materials.](./#teaching)
+I'm a  for , 's Data Structures course. [Look through my teaching materials.](./#teaching)
 
 I'm originally from Seattle, Washington but I attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and reading sci-fi.
 
