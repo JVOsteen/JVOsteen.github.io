@@ -6,7 +6,7 @@ I'm a third year student at American University pursuing degrees in Statistics a
 
 I'm interested in **statistical modeling**, **data science**, **voter behavior**, and **legislative behavior**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm) [Learn more about my experience.](./#experience)
 
-In addition to coding, I love digital design and data science. [Check out my projects.](./#projects)
+In addition to coding, I love doing research and data science. [Check out my research.](./#research)
 
 I'm a TA for CS61B, Berkeley's Data Structures course. [Look through my teaching materials.](./#teaching)
 
