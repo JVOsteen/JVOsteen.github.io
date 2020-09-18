@@ -73,7 +73,7 @@ American University, Washington D.C.
 |                  | Intro to Political Research                           | GOVT310              |
 |                  | American Political Parties                            | GOVT322              |
 
-"* Course in progress"
+_*_ Course in progress
 
 ***
 
@@ -100,6 +100,7 @@ American University, Washington D.C.
 ### Languages
 
 English (native proficiency)
+
 Spanish (full professional proficiency)
 
 ***
