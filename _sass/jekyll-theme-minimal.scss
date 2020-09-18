@@ -28,35 +28,35 @@ h1 {
 
 /*
 h2 {
-  color:#112c8c;
+  color:#01196e;
 }
 
 h3, h4, h5, h6 {
-  color:#112c8c;
+  color:#01196e;
 }
 */
 
 a {
-  color:#2d37cc;
+  color:#002ca6;
   text-decoration:none;
 }
 a strong {
-  color: #2d37cc;
+  color: #002ca6;
 }
 a:hover, a:focus, a:hover strong{
-  color:#2d37cc;
+  color:#002ca6;
   font-weight: bold;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#6e6e6e;
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:#6e6e6e;
 }
 
 .wrapper {
@@ -82,7 +82,7 @@ pre {
   padding:8px 15px;
   background: #f8f8f8;
   border-radius:5px;
-  border:1px solid #e5e5e5;
+  border:1px solid #dbdbdb;
   overflow-x: auto;
 }
 
@@ -98,7 +98,7 @@ th, td {
 }
 
 tr:hover {
-  background-color: #e7e7e7;
+  background-color: #dbdbdb;
 }
 
 dt {
