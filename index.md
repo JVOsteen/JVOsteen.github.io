@@ -43,7 +43,7 @@ Jan Schakowsky for Congress
 ### Research
 
 **Humanities Truck, "Resistance & Revolution"**
-: As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/)
+: As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).
 
 **Research at Center for Data Science in progress...**
 
