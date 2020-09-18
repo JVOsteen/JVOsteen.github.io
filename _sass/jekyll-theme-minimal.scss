@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#2146cc;
+  color:#0d36d9;
   margin:0 0 20px;
 }
 
@@ -28,16 +28,16 @@ h1 {
 
 /*
 h2 {
-  color:#01196e;
+  color:#0d36d9;
 }
 
 h3, h4, h5, h6 {
-  color:#01196e;
+  color:#0d36d9;
 }
 */
 
 a {
-  color:#002ca6;
+  color:#0d36d9;
   text-decoration:none;
 }
 a strong {
@@ -50,13 +50,13 @@ a:hover, a:focus, a:hover strong{
 
 a small {
   font-size:11px;
-  color:#6e6e6e;
+  color:#777;
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#6e6e6e;
+  color:#777;
 }
 
 .wrapper {
@@ -82,7 +82,7 @@ pre {
   padding:8px 15px;
   background: #f8f8f8;
   border-radius:5px;
-  border:1px solid #dbdbdb;
+  border:1px solid #e7e7e7;
   overflow-x: auto;
 }
 
@@ -98,7 +98,7 @@ th, td {
 }
 
 tr:hover {
-  background-color: #dbdbdb;
+  background-color: #e7e7e7;
 }
 
 dt {
@@ -201,7 +201,7 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
+  background:#e7e7e7;
   height:1px;
   margin:0 0 20px;
 }
