@@ -17,25 +17,20 @@ If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
 American University, Center for Data Science, 
-:September 2020–Present
+: September 2020–Present
 : Undergraduate Research Fellow
-
 
 Blue Compass Strategies, January 2020–August 2020
 : Political & Research Fellow
 
-
 Northwestern University, Center for Talent Development, June 2019–August 2019
 : Teaching Assistant
-
 
 American University, Humanities Truck, January 2019–May 2019
 : Contributing Researcher
 
-
 McGaw YMCA, June 2018–July 2018
-: Enrichment Leader
-
+: Enrichment Leader :
 
 Jan Schakowsky for Congress, June 2017–August 2017
 : Intern
