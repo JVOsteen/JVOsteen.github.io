@@ -8,9 +8,7 @@ I'm interested in **statistical modeling**, **data science**, **voter behavior**
 
 In addition to coding, I love doing research and data science. [Check out my research.](./#research)
 
-I'm a   , 's Data  course. [Look through my teaching materials.](./#teaching)
-
-I'm originally from Seattle, Washington but I attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and reading sci-fi.
+I'm originally from Seattle, Washington but I attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and learning history.
 
 ---
 
@@ -39,9 +37,9 @@ Jan Schakowsky for Congress, June 2017–August 2017
 ### Research
 
 **Humanities Truck, "Resistance & Revolution"**
-As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/)
+: As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/)
 
-Research at Center for Data Science in progress... 
+**Research at Center for Data Science in progress...**
 
 
 ***
