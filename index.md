@@ -122,11 +122,11 @@ Spanish (full professional proficiency)
 
 * I can name every country on a blank map.
 * I'm also very good with flags and can probably match most countries with their flag.
-* Believe it or not, but I'm 100% Mexican. My name (except for my middle name) would never suggest it, but it's true!
+* I'm 100% Mexican and I've spent tons of time and spent many summers in Mexico. 
 * I participated in congressional debate in high school. It was pretty cool being called "Senator" whenever I competed. 
 * Speaking of senators, I was actually elected Senator in the fourth grade (my elementary school was a MicroSociety school). Thought I should probably exclude that from my resume though... 
 * My favorite movie is Interstellar by my favorite director Christopher Nolan. 
-* I'm a coffee addict (which makes sense considering I'm from Seattle). 
+* As a Seattleite, I can proudly say I am a coffee addict. 
 
 
 
