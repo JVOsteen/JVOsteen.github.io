@@ -103,9 +103,9 @@ _*_ Course in progress
 
 ### Languages
 
-English (native proficiency)
+**English** (native proficiency)
 
-Spanish (full professional proficiency)
+**Spanish** (full professional proficiency)
 
 ***
 
