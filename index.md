@@ -122,9 +122,8 @@ _*_ Course in progress
 
 * I can name every country on a blank map.
 * I'm also very good with flags and can probably match most countries with their flag.
-* I'm 100% Mexican and I've spent tons of time and spent many summers in Mexico. 
-* I participated in congressional debate in high school. It was pretty cool being called "Senator" whenever I competed. 
-* Speaking of senators, I was actually elected Senator in the fourth grade (my elementary school was a MicroSociety school). Thought I should probably exclude that from my resume though... 
+* I've got tons of family in Mexico and have spent many summers in the beautiful country.  
+* I participated in congressional debate in high school. 
 * My favorite movie is Interstellar by my favorite director Christopher Nolan. 
 * As a Seattleite, I can proudly say I am a coffee addict. 
 
