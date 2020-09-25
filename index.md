@@ -4,7 +4,7 @@ layout: default
 ## About me
 I'm a third year student at American University pursuing degrees in Statistics and Political Science with a minor in Data Science. I’m deeply interested and passionate about data science as it relates to politics I hope to integrate both into my career. I plan to graduate in Spring 2022.
 
-I'm interested in **statistical modeling**, **data science**, **voter behavior**, and **legislative behavior**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). [Learn more about my experience.](./#experience)
+I'm interested in **statistical modeling**, **data science**, **voter behavior**, **legislative behavior**, and the study of **populism**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). [Learn more about my experience.](./#experience)
 
 In addition to coding, I love doing research and data science. [Check out my research.](./#research)
 
@@ -125,6 +125,7 @@ _*_ Course in progress
 * I've got tons of family in Mexico and have spent many summers in the beautiful country.  
 * I participated in congressional debate in high school. 
 * My favorite movie is Interstellar by my favorite director Christopher Nolan. 
+* I strongly dislike all candy unless it is chocolate (e.g. Reese's, KitKats, etc).
 * As a Seattleite, I can proudly say I am a coffee addict. 
 
 
