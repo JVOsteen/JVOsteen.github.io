@@ -114,7 +114,7 @@ _*_ Course in progress
 
 * Soccer
 * Football (Go Hawks!)
-* History (especially Ancient Roman history!)
+* History (especially Ancient Roman history)
 * Debate
 * Travelling (when there isn't a global pandemic)
 
