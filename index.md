@@ -26,9 +26,11 @@ Blue Compass Strategies
 : Political & Research Fellow 
 
 
+
 Northwestern University, Center for Talent Development
 : _June 2019–August 2019_
 : Teaching Assistant 
+
 
 
 American University, Humanities Truck
@@ -36,10 +38,12 @@ American University, Humanities Truck
 : Contributing Researcher 
 
 
+
 McGaw YMCA
 : _June 2018–July 2018_
 : Enrichment Leader 
-<br />
+
+
 Jan Schakowsky for Congress
 : _June 2017–August 2017_
 : Intern
@@ -48,6 +52,7 @@ Jan Schakowsky for Congress
 
 **Humanities Truck, "Resistance & Revolution"**
 : As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/). 
+
 
 
 **American University Center for Data Science**
