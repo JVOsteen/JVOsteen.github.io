@@ -18,23 +18,23 @@ If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 ### Work
 American University, Center for Data Science 
 : _September 2020–Present_
-: Undergraduate Research Fellow
+: Undergraduate Research Fellow \
 
 Blue Compass Strategies 
 : _January 2020–August 2020_
-: Political & Research Fellow
+: Political & Research Fellow \
 
 Northwestern University, Center for Talent Development
 : _June 2019–August 2019_
-: Teaching Assistant
+: Teaching Assistant \
 
 American University, Humanities Truck
 : _January 2019–May 2019_
-: Contributing Researcher
+: Contributing Researcher \
 
 McGaw YMCA
 : _June 2018–July 2018_
-: Enrichment Leader
+: Enrichment Leader \
 
 Jan Schakowsky for Congress
 : _June 2017–August 2017_
@@ -43,7 +43,7 @@ Jan Schakowsky for Congress
 ### Research
 
 **Humanities Truck, "Resistance & Revolution"**
-: As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).
+: As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/). \
 
 **American University Center for Data Science**
 : I currently serve as a Research Assistant to Professor Andrew Ballard. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of data analysis and machine learning. Research is still in progress... 
