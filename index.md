@@ -39,8 +39,7 @@ American University, Humanities Truck
 McGaw YMCA
 : _June 2018–July 2018_
 : Enrichment Leader 
-
-
+<br />
 Jan Schakowsky for Congress
 : _June 2017–August 2017_
 : Intern
