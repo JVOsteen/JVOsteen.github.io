@@ -92,8 +92,8 @@ _*_ Course in progress
 | Type             | Skill                                       | Confidence (1–5)  |
 |------------------|---------------------------------------------|-------------------|
 | Programming      | R (R Studio)                                | 4                 |
-|                  | Python               		                 | 2                 |
-|                  | Java                    		             | 2                 |
+|                  | Python               		                 | 3                 |
+|                  | Java                    		             | 3                 |
 |                  | Stata                                       | 3                 |
 |                  | Excel                                       | 4                 |
 | Technical        | Linear/Multivariate Regression              | 5                 |
