@@ -2,13 +2,13 @@
 layout: default
 ---
 ## About me
-I'm a third year student at American University pursuing degrees in Statistics and Political Science with a minor in Data Science. I’m deeply interested and passionate about data science as it relates to politics I hope to integrate both into my career. I plan to graduate in Spring 2022.
+I'm a third year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science as it relates to politics and I hope to integrate both into my career. I plan to graduate in Spring 2022.
 
-I'm interested in **statistical modeling**, **data science**, **voter behavior**, **legislative behavior**, and the study of **populism**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). [Learn more about my experience.](./#experience)
+I'm interested in **statistical modeling**, **data science**, **voter behavior**, **legislative behavior**, and the study of **populism**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). I was most recently a Political & Research Fellow at political consulting firm, Blue Compass Strategies. [Learn more about my experience.](./#experience)
 
-In addition to coding, I love doing research and data science. [Check out my research.](./#research)
+In addition to coding, I love doing research and expanding my data science skills.
 
-I'm originally from Seattle, Washington but I attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and learning history.
+I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and learning history.
 
 ---
 
@@ -45,8 +45,8 @@ Jan Schakowsky for Congress
 **Humanities Truck, "Resistance & Revolution"**
 : As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).
 
-**Research at Center for Data Science in progress...**
-
+**American University Center for Data Science**
+: I currently serve as a Research Assistant to Professor Andrew Ballard. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of data analysis and machine learning. Research is still in progress... 
 
 ***
 
@@ -54,10 +54,8 @@ Jan Schakowsky for Congress
 ## Education
 
 American University, Washington D.C. 
-: B.S. Statistics, 2022
+: B.S. Statistics (Concentration: Data Science), 2022
 : B.A. Political Science, 2022
-: Minor Data Science, 2022
-
 
 ### Selected Coursework
 
@@ -116,16 +114,16 @@ _*_ Course in progress
 * Football (Go Hawks!)
 * History (especially Ancient Roman history)
 * Debate
-* Travelling (when there isn't a global pandemic)
+* Traveling (when there isn't a global pandemic)
 
 ### Facts
 
 * I can name every country on a blank map.
 * I'm also very good with flags and can probably match most countries with their flag.
-* I've got tons of family in Mexico and have spent many summers in the beautiful country.  
+* I have family in Mexico and have spent many summers in the beautiful country.  
 * I participated in congressional debate in high school. 
-* My favorite movie is Interstellar by my favorite director Christopher Nolan. 
-* I strongly dislike all candy unless it is chocolate (e.g. Reese's, KitKats, etc).
+* My favorite movie is Interstellar directed by my favorite director, Christopher Nolan. 
+* I'm not a fan of candy unless it is chocolate (e.g. Reese's, KitKats, etc).
 * As a Seattleite, I can proudly say I am a coffee addict. 
 
 
