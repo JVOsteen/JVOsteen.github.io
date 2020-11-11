@@ -6,9 +6,7 @@ I'm a third year student at American University pursuing degrees in Statistics a
 
 I'm interested in **statistical modeling**, **data science**, **voter behavior**, **legislative behavior**, and the study of **populism**. I'm currently an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). I was most recently a Political & Research Fellow at political consulting firm, Blue Compass Strategies. [Learn more about my experience.](./#experience)
 
-In addition to coding, I love doing research and expanding my data science skills.
-
-I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and learning history.
+I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
 ---
 
@@ -49,10 +47,11 @@ Jan Schakowsky for Congress
 
 **Humanities Truck, "Resistance & Revolution"**
 : As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).   
-
+:
 
 **American University Center for Data Science**
 : I currently serve as a Research Assistant to Professor Andrew Ballard. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of data analysis and machine learning. Research is still in progress... 
+:
 
 ***
 
