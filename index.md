@@ -47,11 +47,10 @@ Jan Schakowsky for Congress
 
 **Humanities Truck, "Resistance & Revolution"**
 : As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).   
-:
+: ______ :
 
 **American University Center for Data Science**
 : I currently serve as a Research Assistant to Professor Andrew Ballard. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of data analysis and machine learning. Research is still in progress... 
-:
 
 ***
 
