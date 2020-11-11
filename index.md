@@ -58,8 +58,8 @@ Jan Schakowsky for Congress
 ## Education
 
 American University, Washington D.C. 
-: B.S. Statistics (Concentration: Data Science), 2022
-: B.A. Political Science, 2022
+: B.S. _Statistics_ (Concentration: Data Science), 2022
+: B.A. _Political Science_, 2022
 
 ### Selected Coursework
 
