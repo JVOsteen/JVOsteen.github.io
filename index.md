@@ -127,7 +127,7 @@ _*_ Course in progress
 * I have family in Mexico and have spent many summers in the beautiful country.  
 * I participated in congressional debate in high school. 
 * My favorite movie is Interstellar, directed by my favorite director, Christopher Nolan. 
-* I'm not a fan of candy unless it'ss chocolate (e.g. Reese's, KitKats, etc).
+* I'm not a fan of candy unless it's chocolate (e.g. Reese's, KitKats, etc).
 * As a Seattleite, I can proudly say I'm a coffee addict. 
 
 
