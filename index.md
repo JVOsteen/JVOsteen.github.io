@@ -18,22 +18,27 @@ American University, Center for Data Science
 : _September 2020–Present_
 : Undergraduate Research Fellow    
 : –––
+
 Blue Compass Strategies 
 : _January 2020–August 2020_
 : Political & Research Fellow    
 : –––
+
 Northwestern University, Center for Talent Development
 : _June 2019–August 2019_
 : Teaching Assistant    
 : –––
+
 American University, Humanities Truck
 : _January 2019–May 2019_
 : Contributing Researcher    
 : –––
+
 McGaw YMCA
 : _June 2018–July 2018_
 : Enrichment Leader    
 : –––
+
 Jan Schakowsky for Congress
 : _June 2017–August 2017_
 : Intern
