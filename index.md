@@ -17,9 +17,9 @@ If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 American University, Center for Data Science 
 : _September 2020–Present_
 : Undergraduate Research Fellow    
++
 
-
-####Blue Compass Strategies 
+#### Blue Compass Strategies 
 : _January 2020–August 2020_
 : Political & Research Fellow    
 
