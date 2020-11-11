@@ -15,12 +15,12 @@ If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
 American University, Center for Data Science 
-: _September 2020–Present_
-: Undergraduate Research Fellow    
+* _September 2020–Present_
+* Undergraduate Research Fellow    
 
 Blue Compass Strategies 
-: _January 2020–August 2020_
-: Political & Research Fellow    
+* _January 2020–August 2020_
+* Political & Research Fellow    
 
 Northwestern University, Center for Talent Development
 : _June 2019–August 2019_
