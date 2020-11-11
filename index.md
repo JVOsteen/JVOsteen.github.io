@@ -126,9 +126,9 @@ _*_ Course in progress
 * I'm also very good with flags and can probably match most countries with their flag.
 * I have family in Mexico and have spent many summers in the beautiful country.  
 * I participated in congressional debate in high school. 
-* My favorite movie is Interstellar directed by my favorite director, Christopher Nolan. 
-* I'm not a fan of candy unless it is chocolate (e.g. Reese's, KitKats, etc).
-* As a Seattleite, I can proudly say I am a coffee addict. 
+* My favorite movie is Interstellar, directed by my favorite director, Christopher Nolan. 
+* I'm not a fan of candy unless it'ss chocolate (e.g. Reese's, KitKats, etc).
+* As a Seattleite, I can proudly say I'm a coffee addict. 
 
 
 
