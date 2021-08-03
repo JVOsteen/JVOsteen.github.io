@@ -2,9 +2,9 @@
 layout: default
 ---
 ## About me
-I'm a third year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science as it relates to politics and I hope to integrate both into my career. I plan to graduate in Spring 2022.
+I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, statistics, and their applications in business. I graduate in Spring 2022.
 
-I'm interested in **statistical modeling**, **machine learning**, **voter behavior**, **legislative behavior**, and **public opinion**. I'm currently a Polling & Research Intern at [Lake Research Partners](https://www.lakeresearch.com) and am also an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). Learn more about [my experience.](./#experience)
+I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I'm currently a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and am also an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). Learn more about [my experience.](./#experience)
 
 I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
@@ -14,6 +14,11 @@ I'm originally from Seattle, Washington but attended high school in Evanston, Il
 If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
+Giant Food
+: _June 2021–Present_
+: Consumer Insights Intern    
+: –––
+
 Lake Research Partners
 : _January 2021–Present_
 : Polling & Research Intern    
@@ -73,21 +78,19 @@ American University, Washington D.C.
 | Computer Science | Intro to Computer Science I                           | CSC148               |
 |                  | Intro to Computer Science II						   | CSC208               |
 |                  | Statistical Programming in R                          | STAT412              |
-|                  | Databases and Big Data*                               | ITEC470              |
+|                  | Databases and Big Data                                | ITEC470              |
+|                  | Intro to Data Mining*                                 | CSC480               |
 | Math/Statistics  | Linear Algebra                                        | MATH310              |
 |                  | Calculus III						                   | MATH313              |
 |                  | Intermediate Statistics							   | STAT302              |
 |                  | Probability                                           | MATH401              |
 |                  | Regression                                            | STAT415              |
-|                  | Data Science*                                         | STAT413              |
-| Political Science| Elections and Voting Behavior                         | GOVT315              |
-|                  | Congress and Legislative Behavior                     | GOVT321              |
-|                  | Political Power and American Public Policy            | GOVT210              |
-|                  | Intro to Political Research                           | GOVT310              |
-|                  | American Political Parties                            | GOVT322              |
-|                  | Political Speechwriting*                              | GOVT444              |
+|                  | Data Science                                          | STAT413              |
+|                  | Intro to Survey Sampling*                             | STAT405              |
+|                  | Applied Multivariate Analysis*                        | STAT520              |
+|                  | Statistical Machine Learning*                         | STAT427              |
 
-_*_ Course in progress
+_*_ Course in progress/planned
 
 ***
 
@@ -108,7 +111,7 @@ _*_ Course in progress
 | Other            | PowerPoint                                  | 4                 |
 |                  | Microsoft Word				                 | 5                 |
 |                  | General Research                            | 5                 |
-|                  | Opposition Research                         | 5                 |
+|                  | Survey Research                             | 5                 |
 |                  | Public Speaking/Presentation                | 5                 |
 
 ### Languages
@@ -124,18 +127,17 @@ _*_ Course in progress
 
 * Soccer
 * Football (Go Hawks!)
-* History (especially Ancient Roman history)
-* Debate
+* History (especially classical history)
 * Traveling (when there isn't a global pandemic)
 
 ### Facts
 
-* I can name every country on a blank map.
-* I'm also very good with flags and can probably match most countries with their flag.
+* I can name every country on a blank map. 
+* I also love vexillology and can probably match most countries with their flag.
 * I have family in Mexico and have spent many summers in the beautiful country.  
 * I participated in congressional debate in high school. 
-* My favorite movie is Interstellar, directed by my favorite director, Christopher Nolan. 
-* I'm not a fan of candy unless it's chocolate (e.g. Reese's, KitKats, etc).
+* My favorite movie is Interstellar. 
+* I don't like candy unless it's chocolate (e.g. Reese's, KitKats, etc).
 * As a Seattleite, I can proudly say I'm a coffee addict. 
 
 
