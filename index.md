@@ -2,9 +2,9 @@
 layout: default
 ---
 ## About me
-I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, statistics, and their applications in business. I graduate in Spring 2022.
+I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, statistics, and their applications in business and consulting work. I graduate in Spring 2022.
 
-I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I'm currently a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and am also an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/index.cfm). Learn more about [my experience.](./#experience)
+I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I most recently enjoyed working as a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and thoroughly enjoyed serving as an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/graduate-student-fellows.cfm). Learn more about [my experience.](./#experience)
 
 I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
@@ -15,18 +15,18 @@ If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
 Giant Food
-: _June 2021–Present_
+: _June 2021–August 2021_
 : Consumer Insights Intern    
 : –––
 
-Lake Research Partners
-: _January 2021–Present_
-: Polling & Research Intern    
+American University, Center for Data Science 
+: _September 2020–June 2021_
+: Undergraduate Research Fellow    
 : –––
 
-American University, Center for Data Science 
-: _September 2020–Present_
-: Undergraduate Research Fellow    
+Lake Research Partners
+: _January 2021–May 2021_
+: Polling & Research Intern    
 : –––
 
 Blue Compass Strategies 
@@ -60,7 +60,7 @@ Jan Schakowsky for Congress
 : –––
 
 **American University Center for Data Science**
-: I currently serve as a Research Assistant to Professor Andrew Ballard. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of data analysis and machine learning. Research is still in progress... 
+: I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. Their research is still in progress.
 
 ***
 
@@ -90,7 +90,7 @@ American University, Washington D.C.
 |                  | Applied Multivariate Analysis*                        | STAT520              |
 |                  | Statistical Machine Learning*                         | STAT427              |
 
-_*_ Course in progress/planned
+_*_ Course in progress
 
 ***
 
@@ -100,17 +100,17 @@ _*_ Course in progress/planned
 
 | Type             | Skill                                       | Confidence (1–5)  |
 |------------------|---------------------------------------------|-------------------|
-| Programming      | R (R Studio)                                | 4                 |
+| Programming      | R (R Studio)                                | 5                 |
 |                  | Python               		                 | 3                 |
 |                  | Java                    		             | 3                 |
 |                  | Stata                                       | 3                 |
-|                  | Excel                                       | 4                 |
-| Technical        | Multiple Linear/Logistic Regression         | 5                 |
+|                  | Excel                                       | 5                 |
+| Technical        | Simple/Multiple Linear Regression           | 5                 |
 |                  | Hypothesis Testing                          | 5                 |
+|                  | Classification                              | 5                 |
 |                  | Probability Modeling                        | 5                 |
 | Other            | PowerPoint                                  | 4                 |
 |                  | Microsoft Word				                 | 5                 |
-|                  | General Research                            | 5                 |
 |                  | Survey Research                             | 5                 |
 |                  | Public Speaking/Presentation                | 5                 |
 
@@ -128,7 +128,7 @@ _*_ Course in progress/planned
 * Soccer
 * Football (Go Hawks!)
 * History (especially classical history)
-* Traveling (when there isn't a global pandemic)
+* Traveling
 
 ### Facts
 
