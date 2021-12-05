@@ -76,6 +76,7 @@ Jan Schakowsky for Congress
 
 **American University Center for Data Science**
 : I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. Their research is still in progress. You can find out more about the Center [here](https://www.american.edu/spa/data-science/index.cfm). 
+: –––
 
 **Data Science Project, "New York City Rent Data Explorer"**
 : This was a Shiny web application created for my STAT-413 Data Science course at American University. It was created using various packages in R. Its intended use is to provide renters, landlords, and multifamily market researchers in New York City with up to date and useful analysis of rental market data and trends. Try it out for yourself [here](https://joshua-vera-osteen.shinyapps.io/nycrentexplorer/).
