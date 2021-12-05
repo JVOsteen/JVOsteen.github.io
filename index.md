@@ -4,7 +4,7 @@ layout: default
 ## About me
 I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, statistics, and their applications in business and consulting work. I graduate in Spring 2022.
 
-I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I most recently enjoyed working as a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and thoroughly enjoyed serving as an Undergraduate Research Fellow at American University's [Center for Data Science](https://www.american.edu/spa/data-science/graduate-student-fellows.cfm). Learn more about [my experience.](./#experience)
+I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I most recently enjoyed working as a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and am looking forward to working as a Spring Data Analyst at [Grassroots Analytics](https://campaigns.grassrootsanalytics.com/?hsLang=en) this upcoming semester. Learn more about [my experience.](./#experience)
 
 I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
@@ -53,14 +53,33 @@ Jan Schakowsky for Congress
 : _June 2017–August 2017_
 : Intern
 
-### Research
+### Affiliations
+
+**American Statistical Association**
+: _Member since 2021_
+
+**Society of Hispanic Professional Engineers**
+: _Member since 2018_
+
+**Association of Latino Professionals For America**
+: _Member since 2021_
+
+**Pi Sigma Alpha**
+: _Member since 2021_
+
+
+### Research and Projects
 
 **Humanities Truck, "Resistance & Revolution"**
 : As a Contributing Researcher for the [Humanities Truck](http://humanitiestruck.com), a fully customized delivery truck that serves as an experimental mobile platform for collecting, exhibiting, preserving, and expanding dialogue around the humanities, I got to help curate an exhibit with 13 other student researchers. Check out our work [here](http://humanitiestruck.com/resistance-revolution/).   
 : –––
 
 **American University Center for Data Science**
-: I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. Their research is still in progress.
+: I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. Their research is still in progress. You can find out more about the Center [here](https://www.american.edu/spa/data-science/index.cfm). 
+
+**Data Science Project, "New York City Rent Data Explorer"**
+: This was a Shiny web application created for my STAT-413 Data Science course at American University. It was created using various packages in R. Its intended use is to provide renters, landlords, and multifamily market researchers in New York City with up to date and useful analysis of rental market data and trends. Try it out for yourself [here](https://joshua-vera-osteen.shinyapps.io/nycrentexplorer/).
+
 
 ***
 
@@ -102,12 +121,12 @@ _*_ Course in progress
 |------------------|---------------------------------------------|-------------------|
 | Programming      | R (R Studio)                                | 5                 |
 |                  | Python               		                 | 3                 |
-|                  | Java                    		             | 3                 |
 |                  | Stata                                       | 3                 |
+|                  | SQL                                         | 3                 |
 |                  | Excel                                       | 5                 |
-| Technical        | Simple/Multiple Linear Regression           | 5                 |
-|                  | Hypothesis Testing                          | 5                 |
-|                  | Classification                              | 5                 |
+| Technical        | Linear Regression/Generalized Linear Models | 5                 |
+|                  | A/B Testing                                 | 5                 |
+|                  | Classification Techniques                   | 5                 |
 |                  | Probability Modeling                        | 5                 |
 | Other            | PowerPoint                                  | 4                 |
 |                  | Microsoft Word				                 | 5                 |
