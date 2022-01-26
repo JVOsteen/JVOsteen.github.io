@@ -2,9 +2,9 @@
 layout: default
 ---
 ## About me
-I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, statistics, and their applications in business and consulting work. I graduate in Spring 2022.
+I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, database management, statistics, and their applications in politics. I very much hope to apply both my data science/engineering skills in the world of politics upon graduating this semester. 
 
-I'm interested in **statistical modeling**, **machine learning**, **consumer behavior**, and **survey research**. I most recently enjoyed working as a Consumer Insights Intern at [Giant Food](https://www.giantfood.com) and am looking forward to working as a Spring Data Analyst at [Grassroots Analytics](https://campaigns.grassrootsanalytics.com/?hsLang=en) this upcoming semester. Learn more about [my experience.](./#experience)
+I'm interested in **data engineering**, **machine learning**, **voter behavior**, and **survey research**. I currently work as a Spring Data Analyst at [Grassroots Analytics Campaigns](https://campaigns.grassrootsanalytics.com/?hsLang=en)  where I pull call-time and email lists from Grassroots Analytics' database of over 20 million left-leaning Americans. Learn more about [my experience.](./#experience)
 
 I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
@@ -14,6 +14,11 @@ I'm originally from Seattle, Washington but attended high school in Evanston, Il
 If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
+Grassroots Analytics Campaigns
+: _January 2022-Present_
+: Spring Data Analyst
+: –––
+
 Giant Food
 : _June 2021–August 2021_
 : Consumer Insights Intern    
@@ -99,16 +104,18 @@ American University, Washington D.C.
 |                  | Intro to Computer Science II						   | CSC208               |
 |                  | Statistical Programming in R                          | STAT412              |
 |                  | Databases and Big Data                                | ITEC470              |
-|                  | Intro to Data Mining*                                 | CSC480               |
+|                  | Intro to Data Mining                                  | CSC480               |
+|                  | Database Management Systems*                          | CSC434               |
+|                  | Python for Data Science*                              | DATA425              |
 | Math/Statistics  | Linear Algebra                                        | MATH310              |
 |                  | Calculus III						                   | MATH313              |
 |                  | Intermediate Statistics							   | STAT302              |
 |                  | Probability                                           | MATH401              |
 |                  | Regression                                            | STAT415              |
 |                  | Data Science                                          | STAT413              |
-|                  | Intro to Survey Sampling*                             | STAT405              |
-|                  | Applied Multivariate Analysis*                        | STAT520              |
-|                  | Statistical Machine Learning*                         | STAT427              |
+|                  | Intro to Survey Sampling                              | STAT405              |
+|                  | Applied Multivariate Analysis                         | STAT520              |
+|                  | Statistical Machine Learning                          | STAT427              |
 
 _*_ Course in progress
 
