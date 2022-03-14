@@ -2,9 +2,9 @@
 layout: default
 ---
 ## About me
-I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, database management, statistics, and their applications in politics. I very much hope to apply both my data science/engineering skills in the world of politics upon graduating this semester. 
+I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, machine learning, statistics, and their many applications. I am very excited to apply all my skills as an Analytics and Modeling Associate at Fannie Mae. 
 
-I'm interested in **data engineering**, **machine learning**, **voter behavior**, and **survey research**. I currently work as a Spring Data Analyst at [Grassroots Analytics Campaigns](https://campaigns.grassrootsanalytics.com/?hsLang=en)  where I pull call-time and email lists from Grassroots Analytics' database of over 20 million left-leaning Americans. Learn more about [my experience.](./#experience)
+I'm interested in **data modeling**, **machine learning**, **consumer behavior**, and **survey research**. I currently work as a Spring Data Analyst at [Grassroots Analytics Campaigns](https://campaigns.grassrootsanalytics.com/?hsLang=en) where I pull call-time and email lists from Grassroots Analytics' database of over 20 million left-leaning Americans. Learn more about [my experience.](./#experience)
 
 I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
 
@@ -44,11 +44,6 @@ Northwestern University, Center for Talent Development
 : Teaching Assistant    
 : –––
 
-American University, Humanities Truck
-: _January 2019–May 2019_
-: Contributing Researcher    
-: –––
-
 McGaw YMCA
 : _June 2018–July 2018_
 : Enrichment Leader    
@@ -56,7 +51,7 @@ McGaw YMCA
 
 Jan Schakowsky for Congress
 : _June 2017–August 2017_
-: Intern
+: Campaign Intern
 
 ### Affiliations
 
@@ -94,7 +89,7 @@ Jan Schakowsky for Congress
 
 American University, Washington D.C. 
 : B.S. _Statistics_ (Concentration: Data Science), 2022
-: B.A. _Political Science_, 2022
+: B.A. _Political Science_ (Specialization: American Government), 2022
 
 ### Selected Coursework
 
