@@ -2,11 +2,10 @@
 layout: default
 ---
 ## About me
-I'm a fourth year student at American University pursuing degrees in Statistics and Political Science with a focus in Data Science. I’m deeply interested and passionate about data science, machine learning, statistics, and their many applications. I am very excited to apply all my skills as an Analytics and Modeling Associate at Fannie Mae. 
+I'm a Data Scientist at [Fannie Mae](https://www.fanniemae.com/) where I work with a team focuing on collateral risk. I work with businnes parters to 
+I'm a graduate of American University with degrees in Statistics and Political Science. I’m deeply interested and passionate about data science, machine learning, statistics, and their many applications. Learn more about [my experience.](./#experience)
 
-I'm interested in **data modeling**, **machine learning**, **consumer behavior**, and **survey research**. I currently work as a Spring Data Analyst at [Grassroots Analytics Campaigns](https://campaigns.grassrootsanalytics.com/?hsLang=en) where I pull call-time and email lists from Grassroots Analytics' database of over 20 million left-leaning Americans. Learn more about [my experience.](./#experience)
-
-I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, reading, and learning to play piano.
+I'm originally from Seattle, Washington but attended high school in Evanston, Illinois. When I'm not working, I enjoy spending time with friends, drinking coffee, and trying new foods.
 
 ---
 
@@ -14,8 +13,13 @@ I'm originally from Seattle, Washington but attended high school in Evanston, Il
 If you'd like my full resume, reach out at *osteenjv **at** gmail **dot** com*
 
 ### Work
+Fannie Mae
+: _July 2022-Present_
+: Data Science Associate
+: –––
+
 Grassroots Analytics Campaigns
-: _January 2022-Present_
+: _January 2022-June 2022
 : Spring Data Analyst
 : –––
 
@@ -44,15 +48,6 @@ Northwestern University, Center for Talent Development
 : Teaching Assistant    
 : –––
 
-McGaw YMCA
-: _June 2018–July 2018_
-: Enrichment Leader    
-: –––
-
-Jan Schakowsky for Congress
-: _June 2017–August 2017_
-: Campaign Intern
-
 ### Affiliations
 
 **American Statistical Association**
@@ -75,7 +70,7 @@ Jan Schakowsky for Congress
 : –––
 
 **American University Center for Data Science**
-: I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. Their research is still in progress. You can find out more about the Center [here](https://www.american.edu/spa/data-science/index.cfm). 
+: I served as a Research Assistant to Professor Andrew Ballard for the 2020-2021 school year. He and Professor James Curry of The University of Utah are conducting research to better understand legislative behavior by analyzing bill text through the use of text analysis and machine learning. You can find out more about the Center [here](https://www.american.edu/spa/data-science/index.cfm). 
 : –––
 
 **Data Science Project, "New York City Rent Data Explorer"**
@@ -96,15 +91,15 @@ American University, Washington D.C.
 | Type             | Course                                                | Course Number        |
 |------------------|-------------------------------------------------------|----------------------|
 | Computer Science | Intro to Computer Science I                           | CSC148               |
-|                  | Intro to Computer Science II						   | CSC208               |
+|                  | Intro to Computer Science II						               | CSC208               |
 |                  | Statistical Programming in R                          | STAT412              |
 |                  | Databases and Big Data                                | ITEC470              |
 |                  | Intro to Data Mining                                  | CSC480               |
 |                  | Database Management Systems*                          | CSC434               |
 |                  | Python for Data Science*                              | DATA425              |
 | Math/Statistics  | Linear Algebra                                        | MATH310              |
-|                  | Calculus III						                   | MATH313              |
-|                  | Intermediate Statistics							   | STAT302              |
+|                  | Calculus III						                               | MATH313              |
+|                  | Intermediate Statistics							                 | STAT302              |
 |                  | Probability                                           | MATH401              |
 |                  | Regression                                            | STAT415              |
 |                  | Data Science                                          | STAT413              |
@@ -112,7 +107,6 @@ American University, Washington D.C.
 |                  | Applied Multivariate Analysis                         | STAT520              |
 |                  | Statistical Machine Learning                          | STAT427              |
 
-_*_ Course in progress
 
 ***
 
@@ -123,7 +117,7 @@ _*_ Course in progress
 | Type             | Skill                                       | Confidence (1–5)  |
 |------------------|---------------------------------------------|-------------------|
 | Programming      | R (R Studio)                                | 5                 |
-|                  | Python               		                 | 3                 |
+|                  | Python               		                   | 3                 |
 |                  | Stata                                       | 3                 |
 |                  | SQL                                         | 3                 |
 |                  | Excel                                       | 5                 |
@@ -132,7 +126,7 @@ _*_ Course in progress
 |                  | Classification Techniques                   | 5                 |
 |                  | Probability Modeling                        | 5                 |
 | Other            | PowerPoint                                  | 4                 |
-|                  | Microsoft Word				                 | 5                 |
+|                  | Microsoft Word				                       | 5                 |
 |                  | Survey Research                             | 5                 |
 |                  | Public Speaking/Presentation                | 5                 |
 
@@ -160,7 +154,7 @@ _*_ Course in progress
 * I participated in congressional debate in high school. 
 * My favorite movie is Interstellar. 
 * I don't like candy unless it's chocolate (e.g. Reese's, KitKats, etc).
-* As a Seattleite, I can proudly say I'm a coffee addict. 
+* I'm from Seattle, and yes, I am a coffee addict. 
 
 
 
