@@ -38,7 +38,6 @@ title: Joshua Vera O'Steen
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
       padding: 1rem 2rem;
       background-color: var(--bg-dark);
       z-index: 1000;
@@ -49,6 +48,7 @@ title: Joshua Vera O'Steen
       color: var(--primary);
       cursor: pointer;
       text-decoration: none;
+      margin-right: 2rem;
     }
     .nav-links {
       display: flex;
@@ -103,17 +103,6 @@ title: Joshua Vera O'Steen
     .highlight-green { color: #10b981; font-weight: 600; }
     .highlight-yellow { color: #eab308; font-weight: 600; }
     .highlight-orange { color: #f59e0b; font-weight: 600; }
-    .links a {
-      margin: 0 1rem;
-      color: var(--text-light);
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: color 0.2s;
-    }
-    .links a:hover {
-      color: var(--nav-link-hover);
-    }
     .card {
       background: rgba(255,255,255,0.1);
       backdrop-filter: blur(8px);
@@ -154,11 +143,6 @@ title: Joshua Vera O'Steen
     <div class="hero-text">
       <p><span class="highlight-green">Senior Data Scientist</span> with <span class="highlight-yellow">over 5 years</span> of experience building solutions in <span class="highlight-green">housing analytics, policy modeling,</span> and <span class="highlight-green">ML explainability</span>.</p>
       <p>Currently pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown University</span> and leading data science projects at <span class="highlight-orange">Fannie Mae</span>.</p>
-    </div>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
     </div>
   </section>
 
