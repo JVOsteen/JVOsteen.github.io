@@ -11,7 +11,7 @@ title: Joshua Vera O'Steen
   <title>Joshua Vera O'Steen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-light: #ffffff;
@@ -37,14 +37,41 @@ title: Joshua Vera O'Steen
       background-color: var(--bg-dark);
       color: var(--text-dark);
     }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+    .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--primary);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .toggle {
+      background: none;
+      border: 2px solid currentColor;
+      border-radius: 9999px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
     section {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       scroll-snap-align: start;
-      padding: 2rem;
+      padding: 5rem 2rem 2rem;
       text-align: center;
       opacity: 0;
       transform: translateY(30px);
@@ -56,23 +83,20 @@ title: Joshua Vera O'Steen
     }
     h1 {
       font-size: 3rem;
-      margin: 0.5rem 0;
+      margin: 1rem 0 0.5rem;
     }
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-    .toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: none;
-      border: 2px solid currentColor;
-      border-radius: 9999px;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
+    .highlight-green { color: #10b981; font-weight: 600; }
+    .highlight-yellow { color: #eab308; font-weight: 600; }
+    .highlight-orange { color: #f59e0b; font-weight: 600; }
+    .links a {
+      margin: 0 1rem;
+      color: var(--primary);
       font-weight: 600;
-      z-index: 1000;
+      text-decoration: none;
     }
     .card {
       background: rgba(255,255,255,0.1);
@@ -85,12 +109,6 @@ title: Joshua Vera O'Steen
     }
     .card.dark {
       border-color: rgba(255,255,255,0.1);
-    }
-    .links a {
-      margin: 0 1rem;
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: none;
     }
     #background-canvas {
       position: fixed;
@@ -121,12 +139,15 @@ title: Joshua Vera O'Steen
 </head>
 <body>
   <div id="background-canvas"></div>
-  <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <header>
+    <a href="#hero" class="logo">JVO</a>
+    <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
+  </header>
 
   <section id="hero">
-    <img src="./assets/img/joshmemoji.png" alt="Joshua's Memoji" style="width: 100px; border-radius: 50%;">
     <h1>Joshua Vera O'Steen</h1>
-    <p>Data Scientist | Stats & PoliSci | AI MPS Student</p>
+    <p><span class="highlight-green">Senior Data Scientist</span> with <span class="highlight-yellow">over 5 years</span> of experience building solutions in <span class="highlight-green">housing analytics, policy modeling,</span> and <span class="highlight-green">ML explainability</span>.</p>
+    <p>Currently pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown University</span> and leading data science projects at <span class="highlight-orange">Fannie Mae</span>.</p>
     <div class="links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -166,7 +187,6 @@ title: Joshua Vera O'Steen
       document.querySelectorAll('.card').forEach(c => c.classList.toggle('dark'));
     }
 
-    // Scroll animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
