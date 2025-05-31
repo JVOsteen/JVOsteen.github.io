@@ -30,6 +30,8 @@ title: Joshua Vera O'Steen
       background-color: var(--bg-light);
       color: var(--text-light);
       transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
+      position: relative;
     }
     body.dark {
       background-color: var(--bg-dark);
@@ -44,6 +46,13 @@ title: Joshua Vera O'Steen
       scroll-snap-align: start;
       padding: 2rem;
       text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     h1 {
       font-size: 3rem;
@@ -63,6 +72,7 @@ title: Joshua Vera O'Steen
       padding: 0.5rem 1rem;
       cursor: pointer;
       font-weight: 600;
+      z-index: 1000;
     }
     .card {
       background: rgba(255,255,255,0.1);
@@ -82,9 +92,35 @@ title: Joshua Vera O'Steen
       font-weight: 600;
       text-decoration: none;
     }
+    #background-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: radial-gradient(circle at 20% 30%, #3b82f640 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, #6366f140 0%, transparent 50%),
+                  #f0f4f8;
+      animation: animateBackground 10s infinite alternate ease-in-out;
+    }
+    body.dark #background-canvas {
+      background: radial-gradient(circle at 20% 30%, #60a5fa33 0%, transparent 50%),
+                  radial-gradient(circle at 80% 70%, #a78bfa33 0%, transparent 50%),
+                  #0f172a;
+    }
+    @keyframes animateBackground {
+      0% {
+        background-position: 20% 30%, 80% 70%;
+      }
+      100% {
+        background-position: 25% 35%, 75% 65%;
+      }
+    }
   </style>
 </head>
 <body>
+  <div id="background-canvas"></div>
   <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
 
   <section id="hero">
@@ -129,6 +165,19 @@ title: Joshua Vera O'Steen
       document.body.classList.toggle('dark');
       document.querySelectorAll('.card').forEach(c => c.classList.toggle('dark'));
     }
+
+    // Scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
   </script>
 </body>
 </html>
