@@ -230,7 +230,7 @@ title: Joshua Vera O'Steen
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
           size: 2 + Math.random() * 2
-n        });
+        });
       }
     }
     function updateParticles() {
