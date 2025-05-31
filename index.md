@@ -1,108 +1,134 @@
 ---
-layout: default
+layout: none
 title: Joshua Vera O'Steen
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  h1, h2, h3 {
-    font-weight: 600;
-  }
-  a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.6s ease-out;
-    padding: 4rem 1rem;
-  }
-  .project-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    width: 300px;
-    transition: transform 0.3s;
-  }
-  .project-card:hover {
-    transform: translateY(-8px);
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Vera O'Steen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #0f172a;
+      --text-light: #0f172a;
+      --text-dark: #ffffff;
+      --primary: #3b82f6;
+    }
+    html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      scroll-snap-align: start;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin: 0.5rem 0;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: 2px solid currentColor;
+      border-radius: 9999px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 1rem;
+      max-width: 300px;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    .card.dark {
+      border-color: rgba(255,255,255,0.1);
+    }
+    .links a {
+      margin: 0 1rem;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
 
-<!-- Hero Section -->
-<section id="hero" style="text-align: center; background: linear-gradient(to right, #1f2937, #4b5563); color: white;">
-  <img src="./assets/img/joshmemoji.png" alt="Joshua's Memoji" style="width: 120px; border-radius: 50%;">
-  <h1 style="font-size: 2.5rem; margin-top: 1rem;">Joshua Vera O'Steen</h1>
-  <p style="font-size: 1.2rem; margin-top: 0.5rem;">Data Scientist | Stats & PoliSci Enthusiast | AI MPS Student</p>
-  <div style="margin-top: 1.5rem;">
-    <a href="#about" style="margin: 0 1rem;">About</a>
-    <a href="#projects" style="margin: 0 1rem;">Projects</a>
-    <a href="#resume" style="margin: 0 1rem;">Resume</a>
-    <a href="#contact" style="margin: 0 1rem;">Contact</a>
-  </div>
-</section>
-
-<!-- About Section -->
-<section id="about" style="max-width: 800px; margin: auto;">
-  <h2>About Me</h2>
-  <p>I'm a data scientist based in Washington, D.C., with a background in statistics and political science. I'm passionate about leveraging data to solve complex problems and make impactful decisions. I'm currently pursuing a Master of Professional Studies in AI Management at Georgetown University.</p>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" style="background: #f9fafb;">
-  <h2 style="text-align: center;">Projects</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-    <!-- Project cards -->
-    <div class="project-card">
-      <h3>Project Title</h3>
-      <p>Short description of the project, what tools you used, and what you learned or accomplished.</p>
-      <a href="#">View Project</a>
+  <section id="hero">
+    <img src="./assets/img/joshmemoji.png" alt="Joshua's Memoji" style="width: 100px; border-radius: 50%;">
+    <h1>Joshua Vera O'Steen</h1>
+    <p>Data Scientist | Stats & PoliSci | AI MPS Student</p>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
-    <!-- Add more cards here -->
-  </div>
-</section>
+  </section>
 
-<!-- Resume Section -->
-<section id="resume" style="max-width: 800px; margin: auto;">
-  <h2>Resume</h2>
-  <p>You can <a href="/assets/resume.pdf" target="_blank">download my resume here</a>.</p>
-</section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a data scientist in Washington, D.C. with a background in Statistics and Political Science, currently pursuing a Master of Professional Studies in AI Management at Georgetown University. I’m interested in using data and AI to drive thoughtful, strategic decisions.</p>
+  </section>
 
-<!-- Contact Section -->
-<section id="contact" style="text-align: center; background: #e5e7eb;">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-  <p>GitHub: <a href="https://github.com/jvosteen" target="_blank">@jvosteen</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank">Your LinkedIn</a></p>
-</section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A brief description of something cool you built or analyzed.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Another example of your work. Maybe include a dataset, model, or visualization.</p>
+      </div>
+    </div>
+  </section>
 
-<script>
-  // Simple scroll animation fade in
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/jvosteen" target="_blank">@jvosteen</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank">Your LinkedIn</a></p>
+  </section>
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-</script>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      document.querySelectorAll('.card').forEach(c => c.classList.toggle('dark'));
+    }
+  </script>
+</body>
+</html>
