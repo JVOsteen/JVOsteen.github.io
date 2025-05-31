@@ -14,8 +14,8 @@ title: Joshua Vera O'Steen
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-light: #ffffff;
-      --bg-dark: #0f172a;
+      --bg-section-light: #ffffff;
+      --bg-section-dark: #e5e7eb;
       --text-light: #0f172a;
       --text-dark: #ffffff;
       --primary: #10b981; /* green */
@@ -27,14 +27,14 @@ title: Joshua Vera O'Steen
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: var(--bg-light);
+      background-color: var(--bg-section-light);
       color: var(--text-light);
       transition: background 0.3s, color 0.3s;
       overflow-x: hidden;
       position: relative;
     }
     body.dark {
-      background-color: var(--bg-dark);
+      background-color: var(--bg-section-dark);
       color: var(--text-dark);
     }
     header {
@@ -83,28 +83,40 @@ title: Joshua Vera O'Steen
       opacity: 1;
       transform: translateY(0);
     }
+    /* Hero section specific styling */
+    #hero {
+      position: relative;
+      color: white;
+      padding-top: 8rem;
+    }
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
       margin: 1rem 0 0.75rem;
     }
-    h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
     .hero-text p {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       max-width: 900px;
       margin: 0.75rem auto;
+      line-height: 1.4;
     }
     .highlight-green { color: #10b981; font-weight: 600; }
     .highlight-yellow { color: #eab308; font-weight: 600; }
     .highlight-orange { color: #f59e0b; font-weight: 600; }
     .links a {
       margin: 0 1rem;
-      color: #3b82f6;
+      color: white;
       font-weight: 600;
       text-decoration: none;
       font-size: 1.1rem;
+    }
+    /* Other sections background override */
+    #about, #projects, #contact {
+      background-color: var(--bg-section-light);
+      color: var(--text-light);
+    }
+    body.dark #about, body.dark #projects, body.dark #contact {
+      background-color: var(--bg-section-dark);
+      color: var(--text-dark);
     }
     .card {
       background: rgba(255,255,255,0.1);
@@ -118,6 +130,7 @@ title: Joshua Vera O'Steen
     .card.dark {
       border-color: rgba(255,255,255,0.1);
     }
+    /* Canvas network styling */
     #background-canvas {
       position: fixed;
       top: 0;
@@ -125,28 +138,13 @@ title: Joshua Vera O'Steen
       width: 100vw;
       height: 100vh;
       z-index: -1;
-      background: radial-gradient(circle at 20% 30%, #3b82f640 0%, transparent 50%),
-                  radial-gradient(circle at 80% 70%, #6366f140 0%, transparent 50%),
-                  #f0f4f8;
-      animation: animateBackground 10s infinite alternate ease-in-out;
-    }
-    body.dark #background-canvas {
-      background: radial-gradient(circle at 20% 30%, #60a5fa33 0%, transparent 50%),
-                  radial-gradient(circle at 80% 70%, #a78bfa33 0%, transparent 50%),
-                  #0f172a;
-    }
-    @keyframes animateBackground {
-      0% {
-        background-position: 20% 30%, 80% 70%;
-      }
-      100% {
-        background-position: 25% 35%, 75% 65%;
-      }
+      background: #0f172a;
     }
   </style>
 </head>
 <body>
-  <div id="background-canvas"></div>
+  <!-- Canvas for data-network animation -->
+  <canvas id="background-canvas"></canvas>
   <header>
     <a href="#hero" class="logo">JVO</a>
     <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
@@ -192,11 +190,12 @@ title: Joshua Vera O'Steen
   </section>
 
   <script>
+    // Theme toggle
     function toggleTheme() {
       document.body.classList.toggle('dark');
       document.querySelectorAll('.card').forEach(c => c.classList.toggle('dark'));
     }
-
+    // Scroll animation observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -204,10 +203,78 @@ title: Joshua Vera O'Steen
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('section').forEach(section => {
       observer.observe(section);
     });
+
+    // Canvas network animation (particles and lines)
+    const canvas = document.getElementById('background-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const particleCount = 80;
+    const maxDistance = 150;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function initParticles() {
+      particles = [];
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          size: 2 + Math.random() * 2
+n        });
+      }
+    }
+    function updateParticles() {
+      for (let p of particles) {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      }
+    }
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // Draw lines
+      for (let i = 0; i < particleCount; i++) {
+        for (let j = i + 1; j < particleCount; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < maxDistance) {
+            const alpha = 1 - dist / maxDistance;
+            ctx.strokeStyle = `rgba(255,255,255,${alpha * 0.3})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+      // Draw particles
+      for (let p of particles) {
+        ctx.fillStyle = 'rgba(255,255,255,0.7)';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    function animate() {
+      updateParticles();
+      drawParticles();
+      requestAnimationFrame(animate);
+    }
+    initParticles();
+    animate();
   </script>
 </body>
 </html>
