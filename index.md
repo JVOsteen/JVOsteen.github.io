@@ -235,7 +235,7 @@ title: Joshua Vera O'Steen
   </section>
 
   <section id="about">
-    <h2><span class="highlight-green">SAbout Me</span></h2>
+    <h2><span class="highlight-green">About Me</span></h2>
     <p>Hi! I’m Josh Vera O’Steen — a Senior Data Scientist at Fannie Mae with a background in statistics, political science, and a growing passion for leadership and real estate. I combine analytical rigor with strategic thinking to build models and solutions that drive real-world impact.</p>
     <p><strong>Background:</strong></p>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
