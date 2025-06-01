@@ -229,13 +229,13 @@ title: Joshua Vera O'Steen
   <section id="hero">
     <h1>Joshua Vera O'Steen</h1>
     <div class="hero-text">
-      <p><span class="highlight-green">Senior Data Scientist</span> with <span class="highlight-yellow">over 5 years</span> of experience building solutions in <span class="highlight-green">housing analytics, policy modeling,</span> and <span class="highlight-green">ML explainability</span>.</p>
+      <p><span class="highlight-green">Senior Data Scientist</span> with <span class="highlight-yellow">over 4 years</span> of experience building solutions in <span class="highlight-green">real estate analytics, ML modeling,</span> and <span class="highlight-green">ML explainability</span>.</p>
       <p>Currently pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown University</span> and leading data science projects at <span class="highlight-orange">Fannie Mae</span>.</p>
     </div>
   </section>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2><span class="highlight-green">SAbout Me</span></h2>
     <p>Hi! I’m Josh Vera O’Steen — a Senior Data Scientist at Fannie Mae with a background in statistics, political science, and a growing passion for leadership and real estate. I combine analytical rigor with strategic thinking to build models and solutions that drive real-world impact.</p>
     <p><strong>Background:</strong></p>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
