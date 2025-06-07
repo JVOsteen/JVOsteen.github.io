@@ -53,19 +53,19 @@ title: Joshua Vera O'Steen
       height: 100vh;
       background: var(--primary);
       z-index: 999;
-      animation: reveal 1.2s ease forwards;
+      animation: slideInOut 2s ease forwards;
     }
-    @keyframes reveal {
-      0% { transform: translateX(0); }
+    @keyframes slideInOut {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(0); }
       100% { transform: translateX(100%); }
     }
-
-    /* Make hero content fade/slide in after overlay */
     #hero h1, #hero .hero-text {
       opacity: 0;
       transform: translateY(30px);
-      animation: fadeSlide 0.8s ease forwards;
-      animation-delay: 1.1s;
+      animation: fadeSlide 1s ease forwards;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
     }
     @keyframes fadeSlide {
       to {
