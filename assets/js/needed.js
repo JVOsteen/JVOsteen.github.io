@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Existing code...
+  // Lock scrolling during hero animation
+  document.body.style.overflow = 'hidden';
+
+  const overlay = document.querySelector('.hero-overlay');
+  setTimeout(() => {
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // unlock scroll
+  }, 2000);
+
+  // Section visibility observer
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -11,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
-  // Canvas network animation
+  // Canvas setup
   const canvas = document.getElementById('background-canvas');
   const ctx = canvas.getContext('2d');
   let particles = [];
@@ -37,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
   function updateParticles() {
     for (let p of particles) {
       p.x += p.vx;
@@ -45,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
     }
   }
+
   function drawParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < particleCount; i++) {
@@ -70,22 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ctx.fill();
     }
   }
+
+  initParticles();
+  animate();
+
   function animate() {
     updateParticles();
     drawParticles();
     requestAnimationFrame(animate);
   }
-  initParticles();
-  animate();
-  // Hide overlay after animation
-  const overlay = document.querySelector('.hero-overlay');
-  setTimeout(() => {
-    overlay.style.display = 'none';
-  }, 2000); // Match animation duration (2s)
 });
-
-document.body.style.overflow = 'hidden';
-setTimeout(() => {
-  document.querySelector('.hero-overlay').style.display = 'none';
-  document.body.style.overflow = 'auto';
-}, 2000);

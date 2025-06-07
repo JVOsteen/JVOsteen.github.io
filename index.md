@@ -22,20 +22,19 @@ title: Joshua Vera O'Steen
       --timeline-hover: #374151;
       --skill-bg: #242f3e;
     }
-    html {
-      scroll-snap-type: y mandatory;
-      scroll-behavior: smooth;
-    }
-    body {
+    html, body {
       background-color: var(--bg-dark); /* still good */
       position: relative;
       z-index: 1;
       font-family: 'Inter', sans-serif;
       color: var(--text-light);
       overflow-x: hidden;
+      overscroll-behavior-y: none;
       margin: 0;
       padding: 0;
       height: 100%;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
     }
     header {
       position: fixed;
@@ -121,6 +120,8 @@ title: Joshua Vera O'Steen
     /* Hero section */
     #hero {
       height: 100vh;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
