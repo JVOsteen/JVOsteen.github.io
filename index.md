@@ -108,7 +108,6 @@ title: Joshua Vera O'Steen
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      scroll-snap-align: start;
       padding: 2rem 2rem;
       scroll-margin-top: 80px;
       text-align: center;
@@ -117,6 +116,9 @@ title: Joshua Vera O'Steen
       transition: opacity 0.8s ease, transform 0.8s ease;
       color: var(--text-light);
       background-color: transparent; /* allow canvas to show through */
+    }
+    section h2 {
+      margin-top: 2rem;
     }
     section.visible {
       opacity: 1;
@@ -310,7 +312,7 @@ title: Joshua Vera O'Steen
     }
 
     section {
-      padding: 5rem 1rem 2rem;
+      scroll-margin-top: 100px;
     }
   }
   </style>
