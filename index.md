@@ -42,6 +42,7 @@ title: Joshua Vera O'Steen
       left: 0;
       width: 100%;
       display: flex;
+      flex-direction: row;
       align-items: center;
       padding: 1rem 2rem;
       background-color: var(--bg-dark);
@@ -90,6 +91,8 @@ title: Joshua Vera O'Steen
     }
     .nav-links a {
       color: var(--text-light);
+      display: inline-block;
+      padding: 0.5rem 0;
       font-weight: 600;
       text-decoration: none;
       font-size: 1rem;
@@ -256,6 +259,44 @@ title: Joshua Vera O'Steen
       background: transparent;
       pointer-events: none;
     }
+    @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: 0.5rem;
+    }
+
+    .logo {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      padding: 0.25rem 0;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    section {
+      padding: 5rem 1rem 2rem;
+    }
+  }
   </style>
 </head>
 <body>
