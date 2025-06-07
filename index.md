@@ -109,7 +109,8 @@ title: Joshua Vera O'Steen
       justify-content: center;
       flex-direction: column;
       scroll-snap-align: start;
-      padding: 6rem 2rem 2rem;
+      padding: 2rem 2rem;
+      scroll-margin-top: 80px;
       text-align: center;
       opacity: 0;
       transform: translateY(30px);
@@ -331,8 +332,8 @@ title: Joshua Vera O'Steen
   <section id="hero">
     <h1>Joshua Vera O'Steen</h1>
     <div class="hero-text">
-      <p><span class="highlight-green">Senior Data Scientist</span> with <span class="highlight-yellow">over 4 years</span> of experience building solutions in <span class="highlight-green">real estate analytics, ML modeling,</span> and <span class="highlight-green">ML explainability</span>.</p>
-      <p>Currently pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown University</span> and leading data science projects at <span class="highlight-orange">Fannie Mae</span>.</p>
+      <p><span class="highlight-green">Senior Data Scientist</span> driving machine learning solutions in <span class="highlight-green">real estate finance, risk analytics, and strategic decisioning.</span></p>
+      <p>Currently leading high-impact projects at <span class="highlight-orange">Fannie Mae</span> and pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown</span> to bridge data science and leadership.</p>
     </div>
   </section>
   <section id="about">
@@ -396,11 +397,11 @@ title: Joshua Vera O'Steen
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-box">Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Plotly)</div>
+      <div class="skill-box">Python</div>
       <div class="skill-box">R</div>
       <div class="skill-box">SQL</div>
       <div class="skill-box">Stata</div>
-      <div class="skill-box">Machine Learning (Regression, Classification, Clustering, Time Series)</div>
+      <div class="skill-box">Machine Learning (Regression & Classification Techniques)</div>
       <div class="skill-box">A/B Testing</div>
       <div class="skill-box">Data Visualization</div>
       <div class="skill-box">AWS (S3, SageMaker, Ground Truth)</div>
@@ -414,9 +415,8 @@ title: Joshua Vera O'Steen
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:osteenjv@gmail.com" style="color: var(--text-light); text-decoration: underline;">osteenjv@gmail.com</a></p>
-    <p>Phone: (206) 992-5736</p>
     <p>GitHub: <a href="https://github.com/jvosteen" target="_blank" style="color: var(--text-light); text-decoration: underline;">@jvosteen</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank" style="color: var(--text-light); text-decoration: underline;">Your LinkedIn</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/jvosteen" target="_blank" style="color: var(--text-light); text-decoration: underline;">jvosteen</a></p>
   </section>
 <script src="/assets/js/needed.js"></script>
 </body>
