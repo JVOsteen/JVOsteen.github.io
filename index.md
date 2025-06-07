@@ -33,6 +33,16 @@ title: Joshua Vera O'Steen
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
     }
+        /* Canvas styling */
+    #background-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: var(--bg-dark);
+    }
     header {
       position: fixed;
       top: 0;
@@ -234,16 +244,6 @@ title: Joshua Vera O'Steen
       text-align: center;
       font-size: 1rem;
       font-weight: 600;
-    }
-    /* Canvas styling */
-    #background-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-      background: var(--bg-dark);
     }
   </style>
 </head>
