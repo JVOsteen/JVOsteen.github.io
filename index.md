@@ -103,13 +103,8 @@ title: Joshua Vera O'Steen
       color: var(--nav-link-hover);
     }
     section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 2rem 2rem;
-      scroll-margin-top: 80px;
+      padding: 0 2rem 2rem;
+      scroll-margin-top: 100px;
       text-align: center;
       opacity: 0;
       transform: translateY(30px);
@@ -118,7 +113,8 @@ title: Joshua Vera O'Steen
       background-color: transparent; /* allow canvas to show through */
     }
     section h2 {
-      margin-top: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
     }
     section.visible {
       opacity: 1;
