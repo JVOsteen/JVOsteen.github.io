@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Joshua Vera O'Steen
+ title: Joshua Vera O'Steen
 ---
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ title: Joshua Vera O'Steen
       z-index: -1;
       background: var(--bg-dark);
     }
-    /* Hero overlay animation */
+    /* Overlay animation */
     .hero-overlay {
       position: fixed;
       top: 0;
@@ -59,7 +59,7 @@ title: Joshua Vera O'Steen
       50% { transform: translateX(0); }
       100% { transform: translateX(100%); }
     }
-    /* Fade in hero text after overlay */
+    /* Hero text fade in */
     #hero h1,
     #hero .hero-text {
       opacity: 0;
@@ -104,7 +104,7 @@ title: Joshua Vera O'Steen
     .nav-links a:hover {
       color: var(--nav-link-hover);
     }
-    /* Section styling */
+    /* General sections */
     section {
       min-height: 100vh;
       display: flex;
@@ -122,7 +122,7 @@ title: Joshua Vera O'Steen
       opacity: 1;
       transform: translateY(0);
     }
-    /* Hero section */
+    /* Hero */
     #hero {
       position: relative;
       height: 100vh;
@@ -134,36 +134,34 @@ title: Joshua Vera O'Steen
     #hero h1 {
       font-size: 5rem;
       margin: 0.5rem 0;
-      color: var(--text-light);
     }
     .hero-text p {
       font-size: 1.75rem;
       max-width: 900px;
       margin: 0.75rem auto;
       line-height: 1.4;
-      color: var(--text-light);
     }
     .highlight-green { color: #10b981; font-weight: 600; }
     .highlight-yellow { color: #eab308; font-weight: 600; }
     .highlight-orange { color: #f59e0b; font-weight: 600; }
-    /* About Section */
-    #about h2 { font-size: 2.5rem; margin-bottom:1rem; }
-    /* Experience Timeline */
+    /* About */
+    #about h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+    /* Experience */
     #experience { position: relative; padding-top: 4rem; }
-    #experience h2 { font-size: 2.5rem; margin-bottom:1rem; }
-    .timeline { position: relative; max-width:900px; margin:2rem 0; padding-left:2rem; }
-    .timeline::before { content:''; position:absolute; left:40px; top:0; bottom:0; width:4px; background:var(--primary); border-radius:2px; }
+    #experience h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .timeline { position: relative; max-width: 900px; margin: 2rem 0; padding-left: 2rem; }
+    .timeline::before { content: ''; position: absolute; left:40px; top:0; bottom:0; width:4px; background: var(--primary); border-radius:2px; }
     .exp-item { position:relative; margin:2rem 0; padding-left:3rem; text-align:left; }
     .exp-item::before { content:''; position:absolute; left:28px; top:0; width:24px; height:24px; background:var(--primary); border-radius:50%; border:4px solid var(--timeline-bg); }
     .exp-box { background:var(--timeline-bg); padding:1rem 1.5rem; border-radius:0.75rem; transition:background 0.3s; }
-    .exp-item:hover .exp-box { background:var(--timeline-hover); }
+    .exp-item:hover .exp-box { background: var(--timeline-hover); }
     .exp-title { font-size:1.25rem; font-weight:600; margin:0; color:var(--primary); }
     .exp-company { font-size:1rem; margin:0.25rem 0; color:#eab308; }
     .exp-details { display:none; margin-top:0.5rem; font-size:0.95rem; line-height:1.4; }
     .exp-item:hover .exp-details { display:block; }
-    /* Skills Section */
+    /* Skills */
     #skills h2 { font-size:2.5rem; margin-bottom:1rem; }
-    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; max-width:800px; width:100%; margin-top:1rem; }
+    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:1rem; max-width:800px; width:100%; margin-top:1rem; }
     .skill-box { background:var(--skill-bg); padding:1rem; border-radius:0.5rem; text-align:center; font-size:1rem; font-weight:600; }
   </style>
 </head>
@@ -195,30 +193,4 @@ title: Joshua Vera O'Steen
     <h3><strong><span class="highlight-yellow">Background:</span></strong></h3>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
     <h3><strong><span class="highlight-yellow">Outside of Work:</span></strong></h3>
-    <p>Hailing from Seattle, I am an avid coffee drinker and enjoy finding great coffees. Besides coffee, I’m also a big foodie and am a consistent Beli user, always looking for the best restaurants, bars, and bakeries. I also love to travel the world, going to as many places as I can (a personal favorite place to visit is Mexico City). Finally, as any good data scientist, I am always curious. I love trying new things and it’s my curiosity that drove me to make this website! Hope you enjoy and please reach out if you’d like to connect.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <div class="timeline">
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Senior Data Science Associate</p>
-          <p class="exp-company">Fannie Mae, Washington, D.C. (Sept 2024–Present)</p>
-          <p class="exp-details">Contributed to research supporting the expansion of Fannie Mae’s Value Acceptance program. Led the 2024 Cost-Benefit Analysis for Value Acceptance and continue to work on Value Acceptance research and design.</p>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Data Science Associate</p>
-          <p class="exp-company">Fannie Mae, Washington, D.C. (Sept 2023–Sept 2024)</p>
-          <p class="exp-details">Joined the Collateral Products & Modeling team. Led research on appraisal bias mitigation. Authored three research memos and served as Project Lead, managing an intern on an appraisal bias mitigation project.</p>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Analytics & Modeling Associate</p>
-          <p class="exp-company">Fannie Mae, Washington, D.C. (July 2022–Sept 2023)</p>
-          <p class="exp-details">Completed an 11-week program at Fannie Mae, enhancing programming and statistical skills, then spent one year on the Collateral Products & Modeling team on a trial basis.</p>
-        </div>
-
+    <p>Hailing from Seattle, I am an avid coffee drinker and enjoy finding great coffees. Besides coffee, I’m also a big foodie and am a consistent Beli user, always looking for the best restaurants, bars, and bakeries. I also love to travel the world, going to as many places as I can (a personal favorite place to visit is Mexico City). Finally, as any good data scientist, I am always curious. I love trying new things and it’s my curiosity
