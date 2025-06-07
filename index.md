@@ -45,6 +45,34 @@ title: Joshua Vera O'Steen
       background-color: var(--bg-dark);
       z-index: 1000;
     }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--primary);
+      z-index: 999;
+      animation: reveal 1.2s ease forwards;
+    }
+    @keyframes reveal {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* Make hero content fade/slide in after overlay */
+    #hero h1, #hero .hero-text {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlide 0.8s ease forwards;
+      animation-delay: 1.1s;
+    }
+    @keyframes fadeSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
     .logo {
       font-family: 'Pacifico', cursive;
       font-size: 2.5rem;
@@ -214,6 +242,7 @@ title: Joshua Vera O'Steen
   </style>
 </head>
 <body>
+  <div class="hero-overlay"></div>
   <canvas id="background-canvas"></canvas>
   <header>
     <a href="#hero" class="logo">JVO</a>
@@ -234,12 +263,12 @@ title: Joshua Vera O'Steen
     </div>
   </section>
   <section id="about">
-    <h2><span class="highlight-green">About Me</span></h2>
+    <h1><span class="highlight-green">About Me</span></h1>
     <p>Hi! I’m Josh Vera O’Steen — a Senior Data Scientist at Fannie Mae with a background in statistics, political science, and a growing passion for leadership and real estate. I combine analytical rigor with strategic thinking to build models and solutions that drive real-world impact.</p>
-    <p><strong><span class="highlight-yellow">Background:</span></strong></p>
+    <h2><strong><span class="highlight-yellow">Background:</span></strong></h2>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
     <p>At Fannie Mae, I work on the Collateral Products & Modeling team, working on projects aimed at modernizing property valuation — blending advanced modeling techniques with policy and business decision-making. I love collaborating with cross-functional teams, mentoring junior data scientists, and finding ways to make complex ideas accessible and actionable. </p>
-    <p><strong><span class="highlight-yellow">Outside of Work:</span></strong></p>
+    <h2><strong><span class="highlight-yellow">Outside of Work:</span></strong></h2>
     <p>Hailing from Seattle, I am an avid coffee drinker and enjoy finding great coffees. Besides coffee, I’m also a big foodie and am a consistent Beli user, always looking for the best restaurants, bars, and bakeries. I also love to travel the world, going to as many places as I can (a personal favorite place to visit is Mexico City). Finally, as any good data scientist, I am always curious. I love trying new things and it’s my curiosity that drove me to make this website! Hope you enjoy and please reach out if you’d like to connect.</p>
   </section>
 
