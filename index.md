@@ -27,13 +27,13 @@ title: Joshua Vera O'Steen
       padding: 0;
       height: 100%;
       overflow-x: hidden;
-      background-color: var(--bg-dark);
+      background: var(--bg-dark);
       color: var(--text-light);
       font-family: 'Inter', sans-serif;
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
     }
-    /* Canvas styling */
+    /* Canvas background */
     #background-canvas {
       position: fixed;
       top: 0;
@@ -45,7 +45,7 @@ title: Joshua Vera O'Steen
     }
     /* Hero overlay animation */
     .hero-overlay {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
@@ -80,7 +80,7 @@ title: Joshua Vera O'Steen
       display: flex;
       align-items: center;
       padding: 1rem 2rem;
-      background-color: var(--bg-dark);
+      background: var(--bg-dark);
       z-index: 1000;
     }
     .logo {
@@ -116,7 +116,7 @@ title: Joshua Vera O'Steen
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
-      background-color: var(--bg-dark);
+      background: var(--bg-dark);
     }
     section.visible {
       opacity: 1;
@@ -124,27 +124,32 @@ title: Joshua Vera O'Steen
     }
     /* Hero section */
     #hero {
-      height: 100vh;
       position: relative;
+      height: 100vh;
       overflow: hidden;
       z-index: 1;
+      padding-top: 8rem;
+      text-align: center;
     }
     #hero h1 {
       font-size: 5rem;
-      margin: 1rem 0 0.5rem;
-      color: var(--text-light);
+      margin: 0.5rem 0;
     }
     .hero-text p {
       font-size: 1.75rem;
       max-width: 900px;
-      margin: 0.5rem auto;
+      margin: 0.75rem auto;
       line-height: 1.4;
-      color: var(--text-light);
     }
     .highlight-green { color: #10b981; font-weight: 600; }
     .highlight-yellow { color: #eab308; font-weight: 600; }
     .highlight-orange { color: #f59e0b; font-weight: 600; }
-    /* Timeline Section */
+    /* About Section */
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    /* Experience Timeline */
     #experience {
       position: relative;
       padding-top: 4rem;
@@ -215,11 +220,6 @@ title: Joshua Vera O'Steen
     .exp-item:hover .exp-details {
       display: block;
     }
-    /* About Section */
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
     /* Skills Section */
     #skills h2 {
       font-size: 2.5rem;
@@ -270,6 +270,7 @@ title: Joshua Vera O'Steen
     <p>Hi! I’m Josh Vera O’Steen — a Senior Data Scientist at Fannie Mae with a background in statistics, political science, and a growing passion for leadership and real estate. I combine analytical rigor with strategic thinking to build models and solutions that drive real-world impact.</p>
     <h3><strong><span class="highlight-yellow">Background:</span></strong></h3>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
+    <p>At Fannie Mae, I work on the Collateral Products & Modeling team, working on projects aimed at modernizing property valuation — blending advanced modeling techniques with policy and business decision-making. I love collaborating with cross-functional teams, mentoring junior data scientists, and finding ways to make complex ideas accessible and actionable.</p>
     <h3><strong><span class="highlight-yellow">Outside of Work:</span></strong></h3>
     <p>Hailing from Seattle, I am an avid coffee drinker and enjoy finding great coffees. Besides coffee, I’m also a big foodie and am a consistent Beli user, always looking for the best restaurants, bars, and bakeries. I also love to travel the world, going to as many places as I can (a personal favorite place to visit is Mexico City). Finally, as any good data scientist, I am always curious. I love trying new things and it’s my curiosity that drove me to make this website! Hope you enjoy and please reach out if you’d like to connect.</p>
   </section>
@@ -308,4 +309,119 @@ title: Joshua Vera O'Steen
       <div class="exp-item">
         <div class="exp-box">
           <p class="exp-title">Consumer Insights Intern</p>
-          <p class="exp-company">Giant Food, Hyattsville, MD (June–Aug
+          <p class="exp-company">Giant Food, Hyattsville, MD (June–Aug 2021)</p>
+          <p class="exp-details">Led market research on Gen-Z grocery shopping habits using surveys and secondary research. Led a competitive insights project for the Healthy Living team to analyze competitor strategies in healthy living and nutrition.</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-box">
+          <p class="exp-title">Research Fellow</p>
+          <p class="exp-company">American University Center for Data Science, Washington, D.C. (Sept 2020–June 2021)</p>
+          <p class="exp-details">Served as Research Assistant with Professor Andrew Ballard on legislative behavior research using text analysis and machine learning techniques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Plotly)</div>
+      <div class="skill-box">R</div>
+      <div class="skill-box">SQL</div>
+      <div class="skill-box">Stata</div>
+      <div class="skill-box">Machine Learning (Regression, Classification, Clustering, Time Series)</div>
+      <div class="skill-box">A/B Testing</div>
+      <div class="skill-box">Data Visualization</div>
+      <div class="skill-box">AWS (S3, SageMaker, Ground Truth)</div>
+      <div class="skill-box">Technical Writing</div>
+      <div class="skill-box">Spanish (Professional Working Proficiency)</div>
+      <div class="skill-box">Appraisal Bias Research</div>
+      <div class="skill-box">Project Management</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:osteenjv@gmail.com" style="color: var(--text-light); text-decoration: underline;">osteenjv@gmail.com</a></p>
+    <p>Phone: (206) 992-5736</p>
+    <p>GitHub: <a href="https://github.com/jvosteen" target="_blank" style="color: var(--text-light); text-decoration: underline;">@jvosteen</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank" style="color: var(--text-light); text-decoration: underline;">Your LinkedIn</a></p>
+  </section>
+
+  <script>
+    // Particle network background
+    const canvas = document.getElementById('background-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    const particleCount = 80;
+    const maxDistance = 150;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function initParticles() {
+      particles = Array.from({length:particleCount}, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        size: 2 + Math.random() * 2
+      }));
+    }
+
+    function updateParticles() {
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+      });
+    }
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p, i) => {
+        particles.slice(i + 1).forEach(q => {
+          const dx = p.x - q.x;
+          const dy = p.y - q.y;
+          const dist = Math.hypot(dx, dy);
+          if (dist < maxDistance) {
+            ctx.strokeStyle = `rgba(255,255,255,${(1 - dist / maxDistance) * 0.3})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(q.x, q.y);
+            ctx.stroke();
+          }
+        });
+      });
+      particles.forEach(p => {
+        ctx.fillStyle = 'rgba(255,255,255,0.7)';
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+    }
+
+    function animate() {
+      updateParticles();
+      drawParticles();
+      requestAnimationFrame(animate);
+    }
+
+    initParticles(); animate();
+
+    // Reveal non-hero sections on scroll
+    document.querySelectorAll('section:not(#hero)').forEach(sec => {
+      new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 }).observe(sec);
+    });
+  </script>
+</body>
+</html>
