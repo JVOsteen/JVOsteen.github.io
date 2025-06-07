@@ -27,7 +27,7 @@ title: Joshua Vera O'Steen
       padding: 0;
       height: 100%;
       overflow-x: hidden;
-      background: var(--bg-dark);
+      background-color: var(--bg-dark);
       color: var(--text-light);
       font-family: 'Inter', sans-serif;
       scroll-snap-type: y mandatory;
@@ -80,7 +80,7 @@ title: Joshua Vera O'Steen
       display: flex;
       align-items: center;
       padding: 1rem 2rem;
-      background: var(--bg-dark);
+      background-color: var(--bg-dark);
       z-index: 1000;
     }
     .logo {
@@ -105,7 +105,7 @@ title: Joshua Vera O'Steen
       color: var(--nav-link-hover);
     }
     /* Section styling */
-    section:not(#hero) {
+    section {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -116,22 +116,7 @@ title: Joshua Vera O'Steen
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
-      background: var(--bg-dark);
-    }
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    /* Ensure hero section is always visible */
-    #hero {
-      opacity: 1;
-      transform: none;
-      position: relative;
-      height: 100vh;
-      overflow: hidden;
-      z-index: 1;
-      padding-top: 8rem;
-      text-align: center;
+      background-color: var(--bg-dark);
     }
     section.visible {
       opacity: 1;
@@ -149,113 +134,37 @@ title: Joshua Vera O'Steen
     #hero h1 {
       font-size: 5rem;
       margin: 0.5rem 0;
+      color: var(--text-light);
     }
     .hero-text p {
       font-size: 1.75rem;
       max-width: 900px;
       margin: 0.75rem auto;
       line-height: 1.4;
+      color: var(--text-light);
     }
     .highlight-green { color: #10b981; font-weight: 600; }
     .highlight-yellow { color: #eab308; font-weight: 600; }
     .highlight-orange { color: #f59e0b; font-weight: 600; }
     /* About Section */
-    #about h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+    #about h2 { font-size: 2.5rem; margin-bottom:1rem; }
     /* Experience Timeline */
-    #experience {
-      position: relative;
-      padding-top: 4rem;
-    }
-    #experience h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .timeline {
-      position: relative;
-      max-width: 900px;
-      margin: 2rem 0;
-      padding-left: 2rem;
-    }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 40px;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--primary);
-      border-radius: 2px;
-    }
-    .exp-item {
-      position: relative;
-      margin: 2rem 0;
-      padding-left: 3rem;
-      text-align: left;
-    }
-    .exp-item::before {
-      content: '';
-      position: absolute;
-      left: 28px;
-      top: 0;
-      width: 24px;
-      height: 24px;
-      background: var(--primary);
-      border-radius: 50%;
-      border: 4px solid var(--timeline-bg);
-    }
-    .exp-box {
-      background: var(--timeline-bg);
-      padding: 1rem 1.5rem;
-      border-radius: 0.75rem;
-      transition: background 0.3s;
-    }
-    .exp-item:hover .exp-box {
-      background: var(--timeline-hover);
-    }
-    .exp-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin: 0;
-      color: var(--primary);
-    }
-    .exp-company {
-      font-size: 1rem;
-      margin: 0.25rem 0;
-      color: #eab308;
-    }
-    .exp-details {
-      display: none;
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
-      line-height: 1.4;
-    }
-    .exp-item:hover .exp-details {
-      display: block;
-    }
+    #experience { position: relative; padding-top: 4rem; }
+    #experience h2 { font-size: 2.5rem; margin-bottom:1rem; }
+    .timeline { position: relative; max-width:900px; margin:2rem 0; padding-left:2rem; }
+    .timeline::before { content:''; position:absolute; left:40px; top:0; bottom:0; width:4px; background:var(--primary); border-radius:2px; }
+    .exp-item { position:relative; margin:2rem 0; padding-left:3rem; text-align:left; }
+    .exp-item::before { content:''; position:absolute; left:28px; top:0; width:24px; height:24px; background:var(--primary); border-radius:50%; border:4px solid var(--timeline-bg); }
+    .exp-box { background:var(--timeline-bg); padding:1rem 1.5rem; border-radius:0.75rem; transition:background 0.3s; }
+    .exp-item:hover .exp-box { background:var(--timeline-hover); }
+    .exp-title { font-size:1.25rem; font-weight:600; margin:0; color:var(--primary); }
+    .exp-company { font-size:1rem; margin:0.25rem 0; color:#eab308; }
+    .exp-details { display:none; margin-top:0.5rem; font-size:0.95rem; line-height:1.4; }
+    .exp-item:hover .exp-details { display:block; }
     /* Skills Section */
-    #skills h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      max-width: 800px;
-      width: 100%;
-      margin-top: 1rem;
-    }
-    .skill-box {
-      background: var(--skill-bg);
-      padding: 1rem;
-      border-radius: 0.5rem;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 600;
-    }
+    #skills h2 { font-size:2.5rem; margin-bottom:1rem; }
+    .skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; max-width:800px; width:100%; margin-top:1rem; }
+    .skill-box { background:var(--skill-bg); padding:1rem; border-radius:0.5rem; text-align:center; font-size:1rem; font-weight:600; }
   </style>
 </head>
 <body>
@@ -285,7 +194,6 @@ title: Joshua Vera O'Steen
     <p>Hi! I’m Josh Vera O’Steen — a Senior Data Scientist at Fannie Mae with a background in statistics, political science, and a growing passion for leadership and real estate. I combine analytical rigor with strategic thinking to build models and solutions that drive real-world impact.</p>
     <h3><strong><span class="highlight-yellow">Background:</span></strong></h3>
     <p>I hold a Bachelor of Science in Statistics and a Bachelor of Arts in Political Science from American University. I’m currently pursuing a Master of Professional Studies in Artificial Intelligence Management at Georgetown University, where I’m deepening my understanding of how AI can be deployed responsibly and effectively at scale — particularly from a leadership and organizational strategy perspective.</p>
-    <p>At Fannie Mae, I work on the Collateral Products & Modeling team, working on projects aimed at modernizing property valuation — blending advanced modeling techniques with policy and business decision-making. I love collaborating with cross-functional teams, mentoring junior data scientists, and finding ways to make complex ideas accessible and actionable.</p>
     <h3><strong><span class="highlight-yellow">Outside of Work:</span></strong></h3>
     <p>Hailing from Seattle, I am an avid coffee drinker and enjoy finding great coffees. Besides coffee, I’m also a big foodie and am a consistent Beli user, always looking for the best restaurants, bars, and bakeries. I also love to travel the world, going to as many places as I can (a personal favorite place to visit is Mexico City). Finally, as any good data scientist, I am always curious. I love trying new things and it’s my curiosity that drove me to make this website! Hope you enjoy and please reach out if you’d like to connect.</p>
   </section>
@@ -313,130 +221,4 @@ title: Joshua Vera O'Steen
           <p class="exp-company">Fannie Mae, Washington, D.C. (July 2022–Sept 2023)</p>
           <p class="exp-details">Completed an 11-week program at Fannie Mae, enhancing programming and statistical skills, then spent one year on the Collateral Products & Modeling team on a trial basis.</p>
         </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Spring Data Analyst</p>
-          <p class="exp-company">Grassroots Analytics, Washington, D.C. (Jan–June 2022)</p>
-          <p class="exp-details">Provided fundraising and data support to clients, working closely with fundraising strategists to assess campaigns’ operations, developed lists of donors using Stata, and offered guidance to maximize money raised.</p>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Consumer Insights Intern</p>
-          <p class="exp-company">Giant Food, Hyattsville, MD (June–Aug 2021)</p>
-          <p class="exp-details">Led market research on Gen-Z grocery shopping habits using surveys and secondary research. Led a competitive insights project for the Healthy Living team to analyze competitor strategies in healthy living and nutrition.</p>
-        </div>
-      </div>
-      <div class="exp-item">
-        <div class="exp-box">
-          <p class="exp-title">Research Fellow</p>
-          <p class="exp-company">American University Center for Data Science, Washington, D.C. (Sept 2020–June 2021)</p>
-          <p class="exp-details">Served as Research Assistant with Professor Andrew Ballard on legislative behavior research using text analysis and machine learning techniques.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-box">Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Plotly)</div>
-      <div class="skill-box">R</div>
-      <div class="skill-box">SQL</div>
-      <div class="skill-box">Stata</div>
-      <div class="skill-box">Machine Learning (Regression, Classification, Clustering, Time Series)</div>
-      <div class="skill-box">A/B Testing</div>
-      <div class="skill-box">Data Visualization</div>
-      <div class="skill-box">AWS (S3, SageMaker, Ground Truth)</div>
-      <div class="skill-box">Technical Writing</div>
-      <div class="skill-box">Spanish (Professional Working Proficiency)</div>
-      <div class="skill-box">Appraisal Bias Research</div>
-      <div class="skill-box">Project Management</div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:osteenjv@gmail.com" style="color: var(--text-light); text-decoration: underline;">osteenjv@gmail.com</a></p>
-    <p>Phone: (206) 992-5736</p>
-    <p>GitHub: <a href="https://github.com/jvosteen" target="_blank" style="color: var(--text-light); text-decoration: underline;">@jvosteen</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank" style="color: var(--text-light); text-decoration: underline;">Your LinkedIn</a></p>
-  </section>
-
-  <script>
-    // Particle network background
-    const canvas = document.getElementById('background-canvas');
-    const ctx = canvas.getContext('2d');
-    let particles = [];
-    const particleCount = 80;
-    const maxDistance = 150;
-
-    function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    function initParticles() {
-      particles = Array.from({length:particleCount}, () => ({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: 2 + Math.random() * 2
-      }));
-    }
-
-    function updateParticles() {
-      particles.forEach(p => {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-      });
-    }
-
-    function drawParticles() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach((p, i) => {
-        particles.slice(i + 1).forEach(q => {
-          const dx = p.x - q.x;
-          const dy = p.y - q.y;
-          const dist = Math.hypot(dx, dy);
-          if (dist < maxDistance) {
-            ctx.strokeStyle = `rgba(255,255,255,${(1 - dist / maxDistance) * 0.3})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(p.x, p.y);
-            ctx.lineTo(q.x, q.y);
-            ctx.stroke();
-          }
-        });
-      });
-      particles.forEach(p => {
-        ctx.fillStyle = 'rgba(255,255,255,0.7)';
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fill();
-      });
-    }
-
-    function animate() {
-      updateParticles();
-      drawParticles();
-      requestAnimationFrame(animate);
-    }
-
-    initParticles(); animate();
-
-    // Reveal non-hero sections on scroll
-    document.querySelectorAll('section:not(#hero)').forEach(sec => {
-      new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-      }, { threshold: 0.1 }).observe(sec);
-    });
-  </script>
-</body>
-</html>
