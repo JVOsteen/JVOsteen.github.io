@@ -251,6 +251,14 @@ title: Joshua Vera O'Steen
       font-weight: 600;
       width: 100%;
       max-width: 220px;
+      
+      /* Flexbox centering */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100px; /* ensures enough height for visual balance */
+      padding: 1rem;
     }
         /* Canvas styling */
     #background-canvas {
