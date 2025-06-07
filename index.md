@@ -332,8 +332,8 @@ title: Joshua Vera O'Steen
   <section id="hero">
     <h1>Joshua Vera O'Steen</h1>
     <div class="hero-text">
-      <p><span class="highlight-green">Senior Data Scientist</span> driving machine learning solutions in <span class="highlight-green">real estate finance, risk analytics, and strategic decisioning.</span></p>
-      <p>Currently leading high-impact projects at <span class="highlight-orange">Fannie Mae</span> and pursuing an MPS in AI Management at <span class="highlight-orange">Georgetown</span> to bridge data science and leadership.</p>
+      <p><span class="highlight-green">Senior Data Scientist</span> driving <span class="highlight-orange">machine learning solutions</span> in real estate finance, risk analytics, and strategic decisioning.</p>
+      <p>Currently leading high-impact projects at <span class="highlight-green">Fannie Mae</span> and pursuing an MPS in AI Management at <span class="highlight-green">Georgetown University</span>.</p>
     </div>
   </section>
   <section id="about">
