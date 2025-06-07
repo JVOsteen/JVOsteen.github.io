@@ -54,6 +54,7 @@ title: Joshua Vera O'Steen
       background: var(--primary);
       z-index: 999;
       animation: slideInOut 2s ease forwards;
+      pointer-events: none;
     }
     @keyframes slideInOut {
       0% { transform: translateX(-100%); }
