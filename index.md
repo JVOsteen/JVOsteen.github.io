@@ -221,6 +221,11 @@ title: Joshua Vera O'Steen
     .exp-item:hover .exp-details {
       display: block;
     }
+    /* About Me Section */
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
     /* Skills Section */
     #skills {
       padding-top: 4rem;
