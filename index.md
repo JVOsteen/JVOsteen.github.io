@@ -235,11 +235,11 @@ title: Joshua Vera O'Steen
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
       gap: 1rem;
-      max-width: 800px;
-      width: 100%;
-      margin-top: 1rem;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 1rem auto 0;
     }
     .skill-box {
       background: var(--skill-bg);
