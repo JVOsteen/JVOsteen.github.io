@@ -354,19 +354,6 @@ title: Joshua Vera O'Steen
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // Scroll animation observer
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-      });
-
-      // Canvas network animation
       const canvas = document.getElementById('background-canvas');
       const ctx = canvas.getContext('2d');
       let particles = [];
@@ -392,6 +379,7 @@ title: Joshua Vera O'Steen
           });
         }
       }
+
       function updateParticles() {
         for (let p of particles) {
           p.x += p.vx;
@@ -400,6 +388,7 @@ title: Joshua Vera O'Steen
           if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
         }
       }
+
       function drawParticles() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         for (let i = 0; i < particleCount; i++) {
@@ -425,11 +414,13 @@ title: Joshua Vera O'Steen
           ctx.fill();
         }
       }
+
       function animate() {
         updateParticles();
         drawParticles();
         requestAnimationFrame(animate);
       }
+
       initParticles();
       animate();
     });
