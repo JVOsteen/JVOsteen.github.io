@@ -30,6 +30,12 @@ title: Joshua Vera O'Steen
       background-color: var(--bg-dark); /* still good */
       position: relative;
       z-index: 1;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-light);
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
     header {
       position: fixed;
