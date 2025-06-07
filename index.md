@@ -33,7 +33,7 @@ title: Joshua Vera O'Steen
       margin: 0;
       padding: 0;
       height: 100%;
-      scroll-padding-top: 80px;
+      /*scroll-padding-top: 80px;*/
       scroll-snap-type: y mandatory;
       scroll-behavior: smooth;
     }
@@ -235,9 +235,10 @@ title: Joshua Vera O'Steen
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
       justify-content: center;
+      justify-items: center;
       max-width: 1000px;
       margin: 1rem auto 0;
     }
@@ -248,6 +249,8 @@ title: Joshua Vera O'Steen
       text-align: center;
       font-size: 1rem;
       font-weight: 600;
+      width: 100%;
+      max-width: 220px;
     }
         /* Canvas styling */
     #background-canvas {
