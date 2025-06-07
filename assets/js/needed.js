@@ -83,3 +83,9 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.display = 'none';
   }, 2000); // Match animation duration (2s)
 });
+
+document.body.style.overflow = 'hidden';
+setTimeout(() => {
+  document.querySelector('.hero-overlay').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}, 2000);
