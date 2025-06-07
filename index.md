@@ -105,7 +105,7 @@ title: Joshua Vera O'Steen
       color: var(--nav-link-hover);
     }
     /* Section styling */
-    section {
+    section:not(#hero) {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -117,6 +117,21 @@ title: Joshua Vera O'Steen
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
       background: var(--bg-dark);
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Ensure hero section is always visible */
+    #hero {
+      opacity: 1;
+      transform: none;
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+      padding-top: 8rem;
+      text-align: center;
     }
     section.visible {
       opacity: 1;
