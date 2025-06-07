@@ -27,12 +27,9 @@ title: Joshua Vera O'Steen
       scroll-behavior: smooth;
     }
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-      overflow-x: hidden;
+      background-color: var(--bg-dark); /* still good */
       position: relative;
+      z-index: 1;
     }
     header {
       position: fixed;
@@ -109,7 +106,7 @@ title: Joshua Vera O'Steen
       transform: translateY(30px);
       transition: opacity 0.8s ease, transform 0.8s ease;
       color: var(--text-light);
-      background-color: var(--bg-dark);
+      background-color: transparent; /* allow canvas to show through */
     }
     section.visible {
       opacity: 1;
@@ -237,15 +234,16 @@ title: Joshua Vera O'Steen
       font-size: 1rem;
       font-weight: 600;
     }
-    /* Canvas styling */
+        /* Canvas styling */
     #background-canvas {
       position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      z-index: -1;
-      background: var(--bg-dark);
+      z-index: 0; /* was -1 */
+      background: transparent;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -353,7 +351,6 @@ title: Joshua Vera O'Steen
     <p>GitHub: <a href="https://github.com/jvosteen" target="_blank" style="color: var(--text-light); text-decoration: underline;">@jvosteen</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/YOURPROFILE" target="_blank" style="color: var(--text-light); text-decoration: underline;">Your LinkedIn</a></p>
   </section>
-
-<script src="needed.js"></script>
+<script src="/assets/js/needed.js"></script>
 </body>
 </html>
