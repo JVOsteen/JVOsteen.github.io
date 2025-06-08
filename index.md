@@ -50,42 +50,34 @@ title: Joshua Vera O'Steen
       background-color: var(--bg-dark);
       z-index: 1000;
     }
-    .overlay {
-      position: absolute;
+    .hero-overlay {
+      position: fixed;
+      top: 0;
       left: 0;
       width: 100%;
-      height: 3.5rem;             /* matches line-height of content */
-      background-color: var(--primary);
-      overflow: hidden;
+      height: 100vh;
+      background: var(--primary);
+      z-index: 999;
+      animation: slideInOut 2s ease forwards;
+      pointer-events: none;
     }
-
-    .name-overlay {
-      top: calc(50% - 2.5rem);    /* adjust to hover over your name */
-      animation: slideInOut 1.2s ease forwards;
-      animation-delay: 0s;
-    }
-
-    .text-overlay {
-      top: 50%;                   /* adjust to hover over the subtitle */
-      animation: slideInOut 1.2s ease forwards;
-      animation-delay: 0.3s;
-    }
-
     @keyframes slideInOut {
       0% { transform: translateX(-100%); }
-      40% { transform: translateX(0); }
-      60% { transform: translateX(0); }
+      50% { transform: translateX(0); }
       100% { transform: translateX(100%); }
     }
     #hero h1, #hero .hero-text {
       opacity: 0;
-      ^[transform: translateY(20px);]({"attribution":{"attributableIndex":"0-6"}})
-      ^[animation: fadeSlide 0.6s ease forwards;]({"attribution":{"attributableIndex":"0-7"}})
-      ^[animation-delay: 1.5s;  /* just after overlays (~1.2s + small gap) */]({"attribution":{"attributableIndex":"0-8"}})
+      transform: translateY(30px);
+      animation: fadeSlide 1s ease forwards;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
     }
-
     @keyframes fadeSlide {
-      ^[to { opacity: 1; transform: translateY(0); }]({"attribution":{"attributableIndex":"0-9"}})
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     .logo {
       font-family: 'Pacifico', cursive;
@@ -327,6 +319,7 @@ title: Joshua Vera O'Steen
   </style>
 </head>
 <body>
+  <div class="hero-overlay"></div>
   <canvas id="background-canvas"></canvas>
   <header>
     <a href="#hero" class="logo">JVO</a>
@@ -340,8 +333,6 @@ title: Joshua Vera O'Steen
   </header>
 
   <section id="hero">
-    <div class="overlay name-overlay"></div>
-    <div class="overlay text-overlay"></div>
     <h1>Joshua Vera O'Steen</h1>
     <div class="hero-text">
       <p><span class="highlight-green">Senior Data Scientist</span> driving <span class="highlight-orange">machine learning solutions</span> in real estate finance, risk analytics, and strategic decisioning.</p>
