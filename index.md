@@ -278,6 +278,7 @@ title: Joshua Vera O'Steen
     @media (max-width: 768px) {
     html {
       scroll-padding-top: 100px; /* adjust if needed */
+      max-width: 100vw;
     }
     header {
       flex-direction: column;
