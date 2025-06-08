@@ -241,10 +241,11 @@ title: Joshua Vera O'Steen
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
-      justify-content: center;
       justify-items: center;
       max-width: 1000px;
       margin: 1rem auto 0;
+      padding: 0 1rem;
+      box-sizing: border-box;
     }
     .skill-box {
       background: var(--skill-bg);
@@ -275,6 +276,15 @@ title: Joshua Vera O'Steen
       background: transparent;
       pointer-events: none;
     }
+    * {
+      box-sizing: border-box;
+    }
+
+    img, canvas, iframe {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }    
     @media (max-width: 768px) {
     html {
       scroll-padding-top: 100px; /* adjust if needed */
