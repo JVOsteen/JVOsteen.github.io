@@ -312,7 +312,7 @@ title: Joshua Vera O'Steen
     }
 
     section {
-      padding: 0rem 1rem 2rem;
+      padding: 5rem 1rem 2rem;
     }
   }
   </style>
