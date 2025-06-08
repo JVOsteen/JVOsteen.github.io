@@ -239,31 +239,27 @@ title: Joshua Vera O'Steen
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
       gap: 1rem;
-      max-width: 100%;
-      width: 100%;
+      justify-content: center;
       margin: 1rem auto 0;
-      justify-items: center;
       padding: 0 1rem;
+      max-width: 1000px;
+      width: 100%;
       box-sizing: border-box;
     }
     .skill-box {
       background: var(--skill-bg);
       padding: 1rem;
       border-radius: 0.5rem;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: 600;
-      width: 100%;
-      max-width: 100%;
-      /* Flexbox centering */
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      min-height: 100px; /* ensures enough height for visual balance */
-      padding: 1rem;
+      min-height: 100px;
+      max-width: 100%;
+      box-sizing: border-box;
+      word-break: break-word;
     }
         /* Canvas styling */
     #background-canvas {
