@@ -269,7 +269,7 @@ title: Joshua Vera O'Steen
       position: fixed;
       top: 0;
       left: 0;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       z-index: 0; /* was -1 */
       background: transparent;
@@ -278,7 +278,6 @@ title: Joshua Vera O'Steen
     @media (max-width: 768px) {
     html {
       scroll-padding-top: 100px; /* adjust if needed */
-      max-width: 100vw;
     }
     header {
       flex-direction: column;
