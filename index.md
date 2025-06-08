@@ -50,17 +50,28 @@ title: Joshua Vera O'Steen
       z-index: 1000;
     }
     .hero-overlay {
-      position: fixed;
-      top: 0;
+      position: absolute;
       left: 0;
-      width: 100%;
-      height: 100vh;
+      height: 4rem;
       background: var(--primary);
       z-index: 999;
-      animation: slideInOut 2s ease forwards;
       pointer-events: none;
+      animation: slideOverlay 2s ease forwards;
     }
-    @keyframes slideInOut {
+
+    .hero-overlay.headline {
+      top: 35%; /* position over your name */
+      width: 100%;
+      animation-delay: 0s;
+    }
+
+    .hero-overlay.subtext {
+      top: 50%; /* position over your hero text */
+      width: 100%;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes slideOverlay {
       0% { transform: translateX(-100%); }
       50% { transform: translateX(0); }
       100% { transform: translateX(100%); }
@@ -68,10 +79,11 @@ title: Joshua Vera O'Steen
     #hero h1, #hero .hero-text {
       opacity: 0;
       transform: translateY(30px);
-      animation: fadeSlide 1s ease forwards;
-      animation-delay: 2s;
+      animation: fadeSlide 0.8s ease forwards;
+      animation-delay: 2.1s;
       animation-fill-mode: forwards;
     }
+
     @keyframes fadeSlide {
       to {
         opacity: 1;
@@ -318,7 +330,8 @@ title: Joshua Vera O'Steen
   </style>
 </head>
 <body>
-  <div class="hero-overlay"></div>
+  <div class="hero-overlay headline"></div>
+  <div class="hero-overlay subtext"></div>
   <canvas id="background-canvas"></canvas>
   <header>
     <a href="#hero" class="logo">JVO</a>
