@@ -79,13 +79,13 @@ title: Joshua Vera O'Steen
     }
     #hero h1, #hero .hero-text {
       opacity: 0;
-      transform: translateY(20px);]{"attribution":{"attributableIndex":"0-6"}}
-      animation: fadeSlide 0.6s ease forwards;]"attribution":{"attributableIndex":"0-7"}}
-      animation-delay: 1.5s;  /* just after overlays (~1.2s + small gap) */]{"attribution":{"attributableIndex":"0-8"}}
+      ^[transform: translateY(20px);]({"attribution":{"attributableIndex":"0-6"}})
+      ^[animation: fadeSlide 0.6s ease forwards;]({"attribution":{"attributableIndex":"0-7"}})
+      ^[animation-delay: 1.5s;  /* just after overlays (~1.2s + small gap) */]({"attribution":{"attributableIndex":"0-8"}})
     }
 
     @keyframes fadeSlide {
-      to { opacity: 1; transform: translateY(0); }]{"attribution":{"attributableIndex":"0-9"}}
+      ^[to { opacity: 1; transform: translateY(0); }]({"attribution":{"attributableIndex":"0-9"}})
     }
     .logo {
       font-family: 'Pacifico', cursive;
