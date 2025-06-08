@@ -239,11 +239,12 @@ title: Joshua Vera O'Steen
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 1rem;
-      justify-items: center;
-      max-width: 1000px;
+      max-width: 100%;
+      width: 100%;
       margin: 1rem auto 0;
+      justify-items: center;
       padding: 0 1rem;
       box-sizing: border-box;
     }
@@ -255,8 +256,7 @@ title: Joshua Vera O'Steen
       font-size: 1rem;
       font-weight: 600;
       width: 100%;
-      max-width: 220px;
-      
+      max-width: 100%;
       /* Flexbox centering */
       display: flex;
       align-items: center;
