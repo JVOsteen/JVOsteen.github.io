@@ -212,7 +212,7 @@ title: Joshua Vera O'Steen
     /* ─── Hero ─── */
     #hero {
       min-height: 100vh;
-      padding: 0 2rem;
+      padding: 0 2rem 7rem;
       text-align: center;
       overflow: hidden;
     }
@@ -331,7 +331,10 @@ title: Joshua Vera O'Steen
       gap: 0.4rem;
       opacity: 0;
       animation: fadeIn 1s ease 3.4s forwards;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
     }
+    .scroll-hint.hidden { opacity: 0 !important; }
     .scroll-hint span {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
@@ -921,15 +924,15 @@ title: Joshua Vera O'Steen
     <div class="edu-grid fi">
 
       <div class="edu-card c-gold">
-        <div class="edu-icon">🦁</div>
-        <div class="edu-degree">Master of Professional Studies</div>
+        <div class="edu-icon">🤖</div>
+        <div class="edu-degree">Master of Professional Studies · AI Management</div>
         <div class="edu-school">Georgetown University</div>
-        <div class="edu-date">In Progress · Expected 2026</div>
+        <div class="edu-date">In Progress · Expected 2027</div>
         <div class="edu-note">Artificial Intelligence Management — responsible AI deployment, organizational strategy, and AI governance. Bridging the gap between model-building and executive leadership.</div>
       </div>
 
       <div class="edu-card c-green">
-        <div class="edu-icon">🦅</div>
+        <div class="edu-icon">📊</div>
         <div class="edu-degree">Bachelor of Science · Statistics</div>
         <div class="edu-school">American University</div>
         <div class="edu-date">Class of 2022</div>
@@ -1068,10 +1071,12 @@ title: Joshua Vera O'Steen
     ham.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') toggleMenu(); });
     mobNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
 
-    /* ── Header scroll style ── */
-    const hdr = document.getElementById('hdr');
+    /* ── Header scroll style + scroll hint fade ── */
+    const hdr        = document.getElementById('hdr');
+    const scrollHint = document.querySelector('.scroll-hint');
     window.addEventListener('scroll', () => {
       hdr.classList.toggle('scrolled', window.scrollY > 60);
+      if (scrollHint) scrollHint.classList.toggle('hidden', window.scrollY > 80);
     }, { passive: true });
 
     /* ── Fade-in on scroll ── */
