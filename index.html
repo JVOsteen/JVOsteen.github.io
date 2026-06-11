@@ -8,7 +8,7 @@
   <meta property="og:title" content="Josh Vera O'Steen">
   <meta property="og:description" content="Senior Data Scientist at Fannie Mae · AI Management @ Georgetown · powered by espresso.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23FFC93C%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22sans-serif%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23141414%22>JV</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%2300B380%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22sans-serif%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23FFFFFF%22>JV</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,6 +74,7 @@
     .btn:hover  { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
     .btn:active { transform: translate(2px, 2px);  box-shadow: 1px 1px 0 var(--ink); }
     .btn-yellow { background: var(--yellow); }
+    .btn-green  { background: var(--green); color: #fff; }
     .btn-blue   { background: var(--blue);  color: #fff; }
     .btn-coral  { background: var(--coral); color: #fff; }
     .btn-ink    { background: var(--ink);   color: var(--paper); }
@@ -99,7 +100,8 @@
       font-family: var(--font-display);
       font-weight: 800;
       font-size: 1.15rem;
-      background: var(--yellow);
+      background: var(--green);
+      color: #fff;
       border: var(--bw) solid var(--ink);
       border-radius: 0.6rem;
       padding: 0.35rem 0.8rem;
@@ -125,7 +127,7 @@
       transform-origin: left;
       transition: transform 0.2s;
     }
-    nav.desktop-nav a:nth-child(1)::after { background: var(--yellow); }
+    nav.desktop-nav a:nth-child(1)::after { background: var(--tint-green); }
     nav.desktop-nav a:nth-child(2)::after { background: var(--tint-coral); }
     nav.desktop-nav a:nth-child(3)::after { background: var(--tint-purple); }
     nav.desktop-nav a:nth-child(4)::after { background: var(--tint-green); }
@@ -161,7 +163,7 @@
       position: fixed;
       inset: 0;
       z-index: 1001;
-      background: var(--yellow);
+      background: var(--green);
       display: none;
       flex-direction: column;
       align-items: center;
@@ -336,7 +338,7 @@
       padding: 0.8rem 0;
       white-space: nowrap;
     }
-    .marquee.alt { background: var(--yellow); color: var(--ink); }
+    .marquee.alt { background: var(--green); color: #fff; }
     .marquee-track {
       display: inline-flex;
       gap: 2.4rem;
@@ -613,7 +615,7 @@
       transform: rotate(6deg);
       box-shadow: 2px 2px 0 var(--ink);
     }
-    .stamp.fav { background: var(--yellow); transform: rotate(-5deg); }
+    .stamp.fav { background: var(--tint-green); transform: rotate(-5deg); }
 
     .postcard.wishlist { background: var(--tint-yellow); border-style: dashed; }
     .postcard.wishlist .postcard-band { border-bottom-style: dashed; }
@@ -754,11 +756,11 @@
       <div class="hero-grid">
         <div>
           <span class="hero-chip">👋 ¡Hola! I'm</span>
-          <h1>Josh <span class="mk mk-yellow">Vera</span> <span class="mk mk-coral">O'Steen</span></h1>
+          <h1>Josh <span class="mk mk-green">Vera</span> <span class="mk mk-coral">O'Steen</span></h1>
           <p class="hero-role"><b>Senior Data Scientist @ Fannie Mae</b> · AI Management grad student @ Georgetown</p>
           <p class="hero-blurb">I build the machine learning behind how America's homes get valued — and I believe great models need great leadership, sharp questions, and an unreasonable amount of espresso.</p>
           <div class="hero-cta">
-            <a href="#experience" class="btn btn-yellow">See my work ↓</a>
+            <a href="#experience" class="btn btn-green">See my work ↓</a>
             <a href="#contact" class="btn">Say hello 👋</a>
           </div>
         </div>
@@ -792,7 +794,7 @@
   <section id="about">
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-chip c-yellow">01 — About</span>
+        <span class="sec-chip c-green">01 — About</span>
         <h2 class="sec-title">Equal parts <span class="mk mk-green">rigor</span> and <span class="mk mk-coral">curiosity</span>.</h2>
         <p class="sec-sub">Statistician by training, political scientist by instinct, data scientist by trade — and a firm believer that the best models are the ones people actually understand.</p>
       </div>
@@ -931,7 +933,7 @@
     <div class="wrap">
       <div class="sec-head reveal">
         <span class="sec-chip c-purple">03 — Education</span>
-        <h2 class="sec-title">Where <span class="mk mk-yellow">numbers</span> met <span class="mk mk-blue">ideas</span>.</h2>
+        <h2 class="sec-title">Where <span class="mk mk-green">numbers</span> met <span class="mk mk-blue">ideas</span>.</h2>
       </div>
       <div class="edu-grid">
         <div class="edu-card bg-purple card reveal">
@@ -1079,7 +1081,7 @@
     <div class="wrap">
       <div class="reveal">
         <span class="sec-chip c-pink">06 — Contact</span>
-        <h2 class="sec-title">Let's <span class="mk mk-yellow">talk</span>.</h2>
+        <h2 class="sec-title">Let's <span class="mk mk-green">talk</span>.</h2>
         <p class="sec-sub" style="margin-left:auto; margin-right:auto;">Data science, AI strategy, real estate analytics — or just your favorite coffee shop. My inbox is open.</p>
       </div>
       <div class="contact-btns reveal">
