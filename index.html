@@ -8,7 +8,7 @@
   <meta property="og:title" content="Josh Vera O'Steen">
   <meta property="og:description" content="Senior Data Scientist at Fannie Mae · AI Management @ Georgetown · powered by espresso.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%2300B380%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22sans-serif%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23FFFFFF%22>JV</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230C6040%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22sans-serif%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23F5FAF7%22>JV</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +17,21 @@
   <style>
     /* ════════ Tokens ════════ */
     :root {
-      --paper:       #FBF3E7;
-      --ink:         #161616;
-      --blue:        #3A6FF7;
-      --coral:       #FF5C5C;
-      --yellow:      #FFC93C;
-      --green:       #00B380;
-      --purple:      #9B5DE5;
-      --pink:        #FF90B3;
-      --tint-blue:   #E4ECFF;
-      --tint-coral:  #FFE4E0;
-      --tint-yellow: #FFF1C9;
-      --tint-green:  #DCF5EB;
-      --tint-purple: #EFE4FF;
-      --tint-pink:   #FFE7EF;
+      --paper:       #EBF5F0;   /* soft sage-green background     */
+      --surface:     #F5FAF7;   /* near-white w/ green tint       */
+      --ink:         #0D1F13;   /* very dark forest green         */
+      --blue:        #3B72A8;   /* muted slate blue               */
+      --coral:       #D45838;   /* warm terracotta                */
+      --yellow:      #C98020;   /* warm amber                     */
+      --green:       #0C6040;   /* deep forest primary            */
+      --purple:      #7A6DAE;   /* muted lavender                 */
+      --pink:        #E8906A;   /* warm peach / salmon            */
+      --tint-blue:   #D5E5F2;
+      --tint-coral:  #F5DDCC;
+      --tint-yellow: #F5E8C5;
+      --tint-green:  #C2E8D0;
+      --tint-purple: #E5E2F5;
+      --tint-pink:   #F8DFD0;
       --bw:          2.5px;
       --shadow:      6px 6px 0 var(--ink);
       --shadow-sm:   4px 4px 0 var(--ink);
@@ -66,7 +67,7 @@
       border: var(--bw) solid var(--ink);
       border-radius: 0.7rem;
       box-shadow: var(--shadow-sm);
-      background: #fff;
+      background: var(--surface);
       color: var(--ink);
       cursor: pointer;
       transition: transform 0.15s, box-shadow 0.15s;
@@ -138,7 +139,7 @@
     /* Hamburger */
     .hamburger {
       display: none;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 0.6rem;
       box-shadow: 3px 3px 0 var(--ink);
@@ -198,7 +199,7 @@
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.85rem;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 100px;
       padding: 0.35rem 1rem;
@@ -217,10 +218,10 @@
       animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.25s both;
     }
     .mk { padding: 0 0.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-    .mk-yellow { background: linear-gradient(transparent 58%, var(--yellow) 58%); }
-    .mk-coral  { background: linear-gradient(transparent 58%, var(--coral) 58%); }
-    .mk-green  { background: linear-gradient(transparent 58%, var(--green) 58%); }
-    .mk-blue   { background: linear-gradient(transparent 58%, var(--blue) 58%); }
+    .mk-yellow { background: linear-gradient(transparent 58%, #F5C878 58%); }
+    .mk-coral  { background: linear-gradient(transparent 58%, #F0A080 58%); }
+    .mk-green  { background: linear-gradient(transparent 58%, #7DDDB5 58%); }
+    .mk-blue   { background: linear-gradient(transparent 58%, #A0C4E8 58%); }
 
     .hero-role {
       font-family: var(--font-mono);
@@ -251,7 +252,7 @@
     .photo-zone { position: relative; justify-self: center; animation: popIn 0.7s cubic-bezier(0.34,1.56,0.64,1) 0.45s both; }
     .photo-frame {
       position: relative;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 0.4rem;
       padding: 0.85rem 0.85rem 3.4rem;
@@ -275,7 +276,7 @@
       border: 2px solid var(--ink);
       border-radius: 0.2rem;
       background:
-        repeating-linear-gradient(45deg, var(--tint-yellow) 0 18px, var(--yellow) 18px 36px);
+        repeating-linear-gradient(45deg, var(--tint-green) 0 18px, #7DDDB5 18px 36px);
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -305,7 +306,7 @@
     .tape {
       position: absolute;
       width: 92px; height: 28px;
-      background: rgba(255, 201, 60, 0.75);
+      background: rgba(125, 221, 181, 0.72);
       border: 1.5px solid rgba(22,22,22,0.25);
       top: -14px;
       transform: rotate(-6deg);
@@ -315,7 +316,7 @@
     .sticker {
       position: absolute;
       font-size: 1.35rem;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 50%;
       width: 54px; height: 54px;
@@ -375,7 +376,7 @@
     .sec-chip.c-purple { background: var(--purple); color: #fff; }
     .sec-chip.c-green  { background: var(--green); color: #fff; }
     .sec-chip.c-blue   { background: var(--blue); color: #fff; }
-    .sec-chip.c-pink   { background: var(--pink); }
+    .sec-chip.c-pink   { background: var(--pink); color: var(--ink); }
     .sec-title {
       font-family: var(--font-display);
       font-weight: 800;
@@ -400,7 +401,7 @@
       border-radius: 1rem;
       padding: 1.8rem;
       box-shadow: var(--shadow);
-      background: #fff;
+      background: var(--surface);
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
@@ -427,7 +428,7 @@
       align-items: center;
       justify-content: center;
       width: 2.2rem; height: 2.2rem;
-      background: #fff;
+      background: var(--surface);
       border: 2px solid var(--ink);
       border-radius: 0.55rem;
       font-size: 1.15rem;
@@ -438,7 +439,7 @@
     .tag {
       font-family: var(--font-mono);
       font-size: 0.78rem;
-      background: #fff;
+      background: var(--surface);
       border: 2px solid var(--ink);
       border-radius: 100px;
       padding: 0.28rem 0.8rem;
@@ -451,7 +452,7 @@
     details.exp {
       border: var(--bw) solid var(--ink);
       border-radius: 1rem;
-      background: #fff;
+      background: var(--surface);
       box-shadow: var(--shadow);
       transition: transform 0.2s, box-shadow 0.2s;
       overflow: hidden;
@@ -534,7 +535,7 @@
     .edu-card:hover { transform: translate(-3px, -3px) rotate(-0.6deg); box-shadow: 9px 9px 0 var(--ink); }
     .edu-emoji {
       font-size: 1.6rem;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 0.7rem;
       width: 3.1rem; height: 3.1rem;
@@ -550,7 +551,7 @@
       display: inline-block;
       font-family: var(--font-mono);
       font-size: 0.72rem;
-      background: #fff;
+      background: var(--surface);
       border: 2px solid var(--ink);
       border-radius: 100px;
       padding: 0.18rem 0.7rem;
@@ -570,7 +571,7 @@
       border-radius: 1rem;
       box-shadow: var(--shadow);
       overflow: visible;
-      background: #fff;
+      background: var(--surface);
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .postcard:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
@@ -617,7 +618,7 @@
     }
     .stamp.fav { background: var(--tint-green); transform: rotate(-5deg); }
 
-    .postcard.wishlist { background: var(--tint-yellow); border-style: dashed; }
+    .postcard.wishlist { background: var(--tint-green); border-style: dashed; }
     .postcard.wishlist .postcard-band { border-bottom-style: dashed; }
 
     /* ════════ Skills ════════ */
@@ -640,7 +641,7 @@
     .sk {
       font-weight: 600;
       font-size: 0.92rem;
-      background: #fff;
+      background: var(--surface);
       border: var(--bw) solid var(--ink);
       border-radius: 0.6rem;
       padding: 0.5rem 1rem;
@@ -671,7 +672,7 @@
       font-family: var(--font-mono);
       font-size: 0.82rem;
       display: inline-block;
-      background: #fff;
+      background: var(--surface);
       border: 2px dashed var(--ink);
       border-radius: 0.6rem;
       padding: 0.5rem 1.1rem;
