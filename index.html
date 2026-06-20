@@ -656,6 +656,20 @@
     .sk-row .sk:nth-child(6n+4) { background: var(--tint-coral); }
     .sk-row .sk:nth-child(6n+5) { background: var(--tint-purple); }
     .sk-row .sk:nth-child(6n+6) { background: var(--tint-pink); }
+    .sk-cert {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: var(--tint-green);
+      border: 2px solid var(--ink);
+      border-radius: 100px;
+      padding: 0.4rem 1rem;
+      margin-top: 0.9rem;
+    }
+    .cert-icon { font-size: 1rem; }
 
     /* ════════ Contact ════════ */
     #contact { text-align: center; }
@@ -802,7 +816,7 @@
       <div class="about-grid">
         <div class="card bg-blue reveal">
           <h3><span class="emoji-badge">🧠</span> What I do</h3>
-          <p>On Fannie Mae's <b>Collateral Products &amp; Modeling</b> team, I lead research on property valuation modernization and appraisal bias. My work blends machine learning with policy thinking to build models that are accurate, fair, and actually usable — and I mentor junior data scientists along the way.</p>
+          <p>On Fannie Mae's <b>Collateral Products &amp; Modeling</b> team, I lead development of the quantitative risk models behind how the company evaluates property collateral at scale. I also work on applying large language models and multimodal AI to extract meaningful signal from property data — part of a broader push to modernize how valuation works. My approach blends machine learning with policy thinking to build models that are accurate, defensible, and actually usable, and I mentor junior data scientists along the way.</p>
         </div>
         <div class="card bg-purple reveal">
           <h3><span class="emoji-badge">🚀</span> What I'm learning</h3>
@@ -831,7 +845,7 @@
       <div class="sec-head reveal">
         <span class="sec-chip c-coral">02 — Experience</span>
         <h2 class="sec-title">The <span class="mk mk-blue">work</span> so far.</h2>
-        <p class="sec-sub">From legislative text analysis to modernizing how homes get valued. Tap any role for the full story.</p>
+        <p class="sec-sub">From political data analysis to modernizing how homes get valued. Tap any role for the full story.</p>
       </div>
       <div class="exp-list">
 
@@ -846,7 +860,7 @@
             <span class="exp-plus">+</span>
           </summary>
           <div class="exp-body">
-            Driving research behind the expansion of Fannie Mae's <b>Value Acceptance</b> program — a cornerstone initiative to modernize property appraisals. Led the <b>2024 Cost-Benefit Analysis</b> for Value Acceptance, delivering strategic findings that shape policy and business decisions, and continue to research how appraisal waivers can scale responsibly across the housing market.
+            Lead developer on the quantitative risk models at the core of Fannie Mae's collateral evaluation work — the kind of modeling that shapes how property risk is assessed across a large share of the U.S. mortgage market. I also build applied AI systems that use large language models and multimodal techniques to pull meaningful information out of property imagery, advancing how the appraisal process gets modernized. Day to day, that means owning models end to end: design, development, validation, and the stakeholder conversations that get them adopted.
           </div>
         </details>
 
@@ -861,7 +875,7 @@
             <span class="exp-plus">+</span>
           </summary>
           <div class="exp-body">
-            Led research on <b>appraisal bias mitigation</b> on the Collateral Products &amp; Modeling team, authoring three research memos on fair lending and valuation equity. Served as <b>Project Lead</b> on a bias mitigation initiative — managing and mentoring a summer intern through end-to-end delivery.
+            Conducted research on <b>appraisal mis-valuation</b> and supported business partners in Collateral Policy and Strategy, authoring three research memos on valuation accuracy and risk. Served as <b>Project Lead</b> on a mis-valuation mitigation initiative, managing and mentoring a summer intern through end-to-end delivery.
           </div>
         </details>
 
@@ -892,36 +906,6 @@
           </summary>
           <div class="exp-body">
             Provided <b>fundraising analytics</b> to political campaigns nationwide — assessing campaign operations alongside fundraising strategists, building targeted donor lists in Stata, and delivering insights to maximize funds raised. Data skills meet political science instincts.
-          </div>
-        </details>
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-yellow">05</span>
-            <span class="exp-meta">
-              <span class="exp-title">Consumer Insights Intern</span><br>
-              <span class="exp-co">Giant Food · Hyattsville, MD</span>
-            </span>
-            <span class="exp-date">June — Aug 2021</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Led market research on <b>Gen-Z grocery shopping habits</b> using surveys and secondary research, and spearheaded a competitive insights project for the Healthy Living team — analyzing competitor strategies in nutrition and wellness to inform product positioning.
-          </div>
-        </details>
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-pink">06</span>
-            <span class="exp-meta">
-              <span class="exp-title">Undergraduate Research Fellow</span><br>
-              <span class="exp-co">AU Center for Data Science · Washington, D.C.</span>
-            </span>
-            <span class="exp-date">Sept 2020 — June 2021</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Collaborated with Professor Andrew Ballard on <b>legislative behavior research</b>, applying NLP and machine learning to political science questions. Text analysis, research methodology, and the spark that set this whole career in motion.
           </div>
         </details>
 
@@ -1028,6 +1012,8 @@
           <span class="sk">NLP / Text Analysis</span>
           <span class="sk">A/B Testing</span>
           <span class="sk">Experimental Design</span>
+          <span class="sk">Large Language Models</span>
+          <span class="sk">Multimodal AI</span>
           <span class="sk">AI Ethics &amp; Governance</span>
         </div>
       </div>
@@ -1035,21 +1021,21 @@
       <div class="sk-cat reveal">
         <span class="sk-cat-label">Cloud &amp; Infrastructure</span>
         <div class="sk-row">
-          <span class="sk">AWS · S3</span>
-          <span class="sk">AWS · SageMaker</span>
-          <span class="sk">AWS · Ground Truth</span>
+          <span class="sk">AWS (S3, SageMaker)</span>
           <span class="sk">Model Deployment</span>
           <span class="sk">Data Pipelines</span>
+          <span class="sk">Cloud ML</span>
         </div>
+        <div class="sk-cert"><span class="cert-icon">🎓</span> AWS Certified — Machine Learning Engineer (Associate), Solutions Architect (Associate), Cloud Practitioner</div>
       </div>
 
       <div class="sk-cat reveal">
         <span class="sk-cat-label">Domain Expertise</span>
         <div class="sk-row">
           <span class="sk">Property Valuation</span>
-          <span class="sk">Appraisal Bias Research</span>
+          <span class="sk">Collateral Risk Modeling</span>
           <span class="sk">Real Estate Finance</span>
-          <span class="sk">Fair Lending Analytics</span>
+          <span class="sk">Applied LLMs / Multimodal AI</span>
           <span class="sk">Political Data</span>
           <span class="sk">Consumer Insights</span>
         </div>
