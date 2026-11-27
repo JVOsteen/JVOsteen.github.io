@@ -442,7 +442,16 @@ h2 {
   font-weight: 700;
 }
 
-.about-grid,
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 1.25rem clamp(2rem, 6vw, 5.5rem);
+  align-items: start;
+  max-width: 68rem;
+}
+
+.about h2 { text-wrap: balance; }
+
 .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -451,11 +460,13 @@ h2 {
 }
 
 .about-copy {
+  max-width: 62ch;
   color: var(--muted);
   font-size: 1.125rem;
+  text-wrap: pretty;
 }
 
-.about-copy p + p { margin-top: 0.65rem; }
+.about-copy p + p { margin-top: 1rem; }
 
 .contact {
   padding-bottom: 1.6rem;
@@ -495,6 +506,10 @@ h2 {
   .contact-grid .actions { justify-self: start; }
 }
 
+@media (max-width: 48rem) {
+  .about-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
 @media (max-width: 43rem) {
   html { scroll-padding-top: 7.75rem; }
   .container { width: min(100% - 2.5rem, 75rem); }
@@ -514,7 +529,6 @@ h2 {
   .hero-grid,
   .project-grid,
   .toolkit-grid,
-  .about-grid,
   .contact-grid {
     grid-template-columns: minmax(0, 1fr);
   }
