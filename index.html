@@ -1,1131 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Josh Vera O'Steen | Data Scientist, Coffee Snob, Curious Human</title>
-  <meta name="description" content="Senior Data Scientist at Fannie Mae, AI Management grad student at Georgetown, Seattle-raised coffee snob, and CDMX superfan.">
-  <meta property="og:title" content="Josh Vera O'Steen">
-  <meta property="og:description" content="Senior Data Scientist at Fannie Mae · AI Management @ Georgetown · powered by espresso.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Josh Vera O’Steen | Data Science &amp; Applied AI</title>
+  <meta name="description" content="Josh Vera O’Steen leads collateral risk modeling and builds applied AI at Fannie Mae. Explore his experience, technical skills, and Touchline soccer tactics game.">
+  <meta name="theme-color" content="#14221b">
+  <link rel="canonical" href="https://jvosteen.github.io/">
   <meta property="og:type" content="website">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230C6040%22/><text x=%2250%22 y=%2268%22 font-size=%2248%22 font-family=%22sans-serif%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%23F5FAF7%22>JV</text></svg>">
-
+  <meta property="og:url" content="https://jvosteen.github.io/">
+  <meta property="og:title" content="Josh Vera O’Steen | Data Science &amp; Applied AI">
+  <meta property="og:description" content="Senior data scientist at Fannie Mae working on mortgage collateral risk, property valuation, and applied AI. Creator of Touchline.">
+  <meta property="og:image" content="https://jvosteen.github.io/assets/img/profile.jpg">
+  <meta property="og:image:alt" content="Portrait of Josh Vera O’Steen">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314221b'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='sans-serif' font-size='29' font-weight='700' fill='%23d8f28b'%3EJV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* ════════ Tokens ════════ */
-    :root {
-      --paper:       #EBF5F0;   /* soft sage-green background     */
-      --surface:     #F5FAF7;   /* near-white w/ green tint       */
-      --ink:         #0D1F13;   /* very dark forest green         */
-      --blue:        #3B72A8;   /* muted slate blue               */
-      --coral:       #D45838;   /* warm terracotta                */
-      --yellow:      #C98020;   /* warm amber                     */
-      --green:       #0C6040;   /* deep forest primary            */
-      --purple:      #7A6DAE;   /* muted lavender                 */
-      --pink:        #E8906A;   /* warm peach / salmon            */
-      --tint-blue:   #D5E5F2;
-      --tint-coral:  #F5DDCC;
-      --tint-yellow: #F5E8C5;
-      --tint-green:  #C2E8D0;
-      --tint-purple: #E5E2F5;
-      --tint-pink:   #F8DFD0;
-      --bw:          2.5px;
-      --shadow:      6px 6px 0 var(--ink);
-      --shadow-sm:   4px 4px 0 var(--ink);
-      --font-display: 'Syne', sans-serif;
-      --font-body:    'Space Grotesk', sans-serif;
-      --font-mono:    'Space Mono', monospace;
-    }
-
-    /* ════════ Reset ════════ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-    body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--font-body);
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
-
-    /* ════════ Buttons ════════ */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--font-body);
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 0.85rem 1.7rem;
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.7rem;
-      box-shadow: var(--shadow-sm);
-      background: var(--surface);
-      color: var(--ink);
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    .btn:hover  { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
-    .btn:active { transform: translate(2px, 2px);  box-shadow: 1px 1px 0 var(--ink); }
-    .btn-yellow { background: var(--yellow); }
-    .btn-green  { background: var(--green); color: #fff; }
-    .btn-blue   { background: var(--blue);  color: #fff; }
-    .btn-coral  { background: var(--coral); color: #fff; }
-    .btn-ink    { background: var(--ink);   color: var(--paper); }
-
-    /* ════════ Header ════════ */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: var(--paper);
-      border-bottom: var(--bw) solid var(--ink);
-    }
-    .header-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0.85rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-    .logo {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 1.15rem;
-      background: var(--green);
-      color: #fff;
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.6rem;
-      padding: 0.35rem 0.8rem;
-      box-shadow: 3px 3px 0 var(--ink);
-      transition: transform 0.15s, box-shadow 0.15s;
-    }
-    .logo:hover { transform: translate(-1px,-1px) rotate(-2deg); box-shadow: 4px 4px 0 var(--ink); }
-
-    nav.desktop-nav { display: flex; gap: 1.6rem; }
-    nav.desktop-nav a {
-      font-weight: 600;
-      font-size: 0.95rem;
-      position: relative;
-      padding: 0.2rem 0.1rem;
-    }
-    nav.desktop-nav a::after {
-      content: '';
-      position: absolute;
-      left: 0; right: 0; bottom: 0;
-      height: 8px;
-      z-index: -1;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.2s;
-    }
-    nav.desktop-nav a:nth-child(1)::after { background: var(--tint-green); }
-    nav.desktop-nav a:nth-child(2)::after { background: var(--tint-coral); }
-    nav.desktop-nav a:nth-child(3)::after { background: var(--tint-purple); }
-    nav.desktop-nav a:nth-child(4)::after { background: var(--tint-green); }
-    nav.desktop-nav a:nth-child(5)::after { background: var(--tint-blue); }
-    nav.desktop-nav a:nth-child(6)::after { background: var(--tint-pink); }
-    nav.desktop-nav a:hover::after { transform: scaleX(1); }
-
-    /* Hamburger */
-    .hamburger {
-      display: none;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.6rem;
-      box-shadow: 3px 3px 0 var(--ink);
-      padding: 0.6rem 0.7rem;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 4px;
-      z-index: 1002;
-    }
-    .hamburger span {
-      display: block;
-      width: 20px; height: 2.5px;
-      background: var(--ink);
-      border-radius: 2px;
-      transition: transform 0.25s, opacity 0.25s;
-    }
-    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-    .hamburger.open span:nth-child(2) { opacity: 0; }
-    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-    .mobile-nav {
-      position: fixed;
-      inset: 0;
-      z-index: 1001;
-      background: var(--green);
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.6rem;
-    }
-    .mobile-nav.open { display: flex; }
-    .mobile-nav a {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 2rem;
-      background: var(--paper);
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.8rem;
-      box-shadow: var(--shadow-sm);
-      padding: 0.5rem 1.6rem;
-      transition: transform 0.15s;
-    }
-    .mobile-nav a:nth-child(odd):hover  { transform: rotate(-2deg) scale(1.04); }
-    .mobile-nav a:nth-child(even):hover { transform: rotate(2deg) scale(1.04); }
-
-    /* ════════ Hero ════════ */
-    #hero { padding: 4.5rem 0 5rem; overflow: hidden; }
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 3.5rem;
-      align-items: center;
-    }
-
-    .hero-chip {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.85rem;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 100px;
-      padding: 0.35rem 1rem;
-      box-shadow: 3px 3px 0 var(--ink);
-      margin-bottom: 1.4rem;
-      animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s both;
-    }
-
-    h1 {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: clamp(2.8rem, 7vw, 4.8rem);
-      line-height: 1.04;
-      letter-spacing: -0.02em;
-      margin-bottom: 1.3rem;
-      animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.25s both;
-    }
-    .mk { padding: 0 0.12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-    .mk-yellow { background: linear-gradient(transparent 58%, #F5C878 58%); }
-    .mk-coral  { background: linear-gradient(transparent 58%, #F0A080 58%); }
-    .mk-green  { background: linear-gradient(transparent 58%, #7DDDB5 58%); }
-    .mk-blue   { background: linear-gradient(transparent 58%, #A0C4E8 58%); }
-
-    .hero-role {
-      font-family: var(--font-mono);
-      font-size: 0.92rem;
-      margin-bottom: 1.2rem;
-      animation: popIn 0.6s ease 0.4s both;
-    }
-    .hero-role b { font-weight: 700; }
-    .hero-blurb {
-      font-size: 1.15rem;
-      max-width: 34rem;
-      margin-bottom: 2rem;
-      animation: popIn 0.6s ease 0.5s both;
-    }
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      animation: popIn 0.6s ease 0.6s both;
-    }
-
-    @keyframes popIn {
-      from { opacity: 0; transform: translateY(18px) scale(0.98); }
-      to   { opacity: 1; transform: translateY(0) scale(1); }
-    }
-
-    /* Polaroid */
-    .photo-zone { position: relative; justify-self: center; animation: popIn 0.7s cubic-bezier(0.34,1.56,0.64,1) 0.45s both; }
-    .photo-frame {
-      position: relative;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.4rem;
-      padding: 0.85rem 0.85rem 3.4rem;
-      box-shadow: var(--shadow);
-      transform: rotate(2.5deg);
-      width: min(320px, 78vw);
-      transition: transform 0.3s;
-    }
-    .photo-frame:hover { transform: rotate(0.5deg) scale(1.02); }
-    .photo-frame img {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      border: 2px solid var(--ink);
-      border-radius: 0.2rem;
-    }
-    .photo-fallback {
-      display: none;
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      border: 2px solid var(--ink);
-      border-radius: 0.2rem;
-      background:
-        repeating-linear-gradient(45deg, var(--tint-green) 0 18px, #7DDDB5 18px 36px);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-    }
-    .photo-frame.no-photo img { display: none; }
-    .photo-frame.no-photo .photo-fallback { display: flex; }
-    .photo-fallback .mono-mark {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 4rem;
-      background: var(--paper);
-      border: var(--bw) solid var(--ink);
-      border-radius: 1rem;
-      padding: 0.4rem 1.2rem;
-      box-shadow: var(--shadow-sm);
-      transform: rotate(-3deg);
-    }
-    .photo-fallback small { font-family: var(--font-mono); font-size: 0.72rem; background: var(--paper); padding: 0.15rem 0.6rem; border-radius: 100px; border: 2px solid var(--ink); }
-    .photo-caption {
-      position: absolute;
-      bottom: 0.9rem; left: 0; right: 0;
-      text-align: center;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-    }
-    .tape {
-      position: absolute;
-      width: 92px; height: 28px;
-      background: rgba(125, 221, 181, 0.72);
-      border: 1.5px solid rgba(22,22,22,0.25);
-      top: -14px;
-      transform: rotate(-6deg);
-      left: 50%;
-      margin-left: -46px;
-    }
-    .sticker {
-      position: absolute;
-      font-size: 1.35rem;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 50%;
-      width: 54px; height: 54px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 3px 3px 0 var(--ink);
-    }
-    .sticker.s1 { top: -10px;  right: -22px; background: var(--tint-coral);  transform: rotate(10deg); }
-    .sticker.s2 { bottom: 52px; left: -26px; background: var(--tint-green);  transform: rotate(-8deg); }
-    .sticker.s3 { bottom: -16px; right: 12px; background: var(--tint-blue);  transform: rotate(6deg); }
-
-    /* ════════ Marquee ════════ */
-    .marquee {
-      border-top: var(--bw) solid var(--ink);
-      border-bottom: var(--bw) solid var(--ink);
-      background: var(--ink);
-      color: var(--paper);
-      overflow: hidden;
-      padding: 0.8rem 0;
-      white-space: nowrap;
-    }
-    .marquee.alt { background: var(--green); color: #fff; }
-    .marquee-track {
-      display: inline-flex;
-      gap: 2.4rem;
-      padding-right: 2.4rem;
-      width: max-content;
-      animation: scrollX 30s linear infinite;
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.05rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    .marquee.alt .marquee-track { animation-direction: reverse; }
-    @keyframes scrollX { to { transform: translateX(-50%); } }
-
-    /* ════════ Sections ════════ */
-    section { padding: 5.5rem 0; }
-
-    .sec-head { margin-bottom: 3rem; }
-    .sec-chip {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      font-weight: 700;
-      border: var(--bw) solid var(--ink);
-      border-radius: 100px;
-      padding: 0.25rem 0.9rem;
-      box-shadow: 3px 3px 0 var(--ink);
-      margin-bottom: 1rem;
-      transform: rotate(-1.5deg);
-    }
-    .sec-chip.c-yellow { background: var(--yellow); }
-    .sec-chip.c-coral  { background: var(--coral); color: #fff; }
-    .sec-chip.c-purple { background: var(--purple); color: #fff; }
-    .sec-chip.c-green  { background: var(--green); color: #fff; }
-    .sec-chip.c-blue   { background: var(--blue); color: #fff; }
-    .sec-chip.c-pink   { background: var(--pink); color: var(--ink); }
-    .sec-title {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: clamp(2.1rem, 5vw, 3.4rem);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-    }
-    .sec-sub { font-size: 1.08rem; max-width: 38rem; margin-top: 0.8rem; }
-
-    /* Reveal on scroll */
-    .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.in { opacity: 1; transform: translateY(0); }
-
-    /* ════════ About ════════ */
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.6rem;
-    }
-    .card {
-      border: var(--bw) solid var(--ink);
-      border-radius: 1rem;
-      padding: 1.8rem;
-      box-shadow: var(--shadow);
-      background: var(--surface);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
-    .card h3 {
-      font-family: var(--font-display);
-      font-weight: 700;
-      font-size: 1.25rem;
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-    }
-    .card p { font-size: 0.98rem; }
-    .card.full { grid-column: 1 / -1; }
-    .card.bg-blue   { background: var(--tint-blue); }
-    .card.bg-yellow { background: var(--tint-yellow); }
-    .card.bg-pink   { background: var(--tint-pink); }
-    .card.bg-green  { background: var(--tint-green); }
-    .card.bg-purple { background: var(--tint-purple); }
-    .card.bg-coral  { background: var(--tint-coral); }
-
-    .emoji-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 2.2rem; height: 2.2rem;
-      background: var(--surface);
-      border: 2px solid var(--ink);
-      border-radius: 0.55rem;
-      font-size: 1.15rem;
-      flex-shrink: 0;
-    }
-
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.1rem; }
-    .tag {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      background: var(--surface);
-      border: 2px solid var(--ink);
-      border-radius: 100px;
-      padding: 0.28rem 0.8rem;
-      transition: transform 0.15s;
-    }
-    .tag:hover { transform: rotate(-2deg) scale(1.05); }
-
-    /* ════════ Experience ════════ */
-    .exp-list { display: flex; flex-direction: column; gap: 1.3rem; }
-    details.exp {
-      border: var(--bw) solid var(--ink);
-      border-radius: 1rem;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-      overflow: hidden;
-    }
-    details.exp:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
-    details.exp summary {
-      list-style: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 1.1rem;
-      padding: 1.3rem 1.5rem;
-      user-select: none;
-    }
-    details.exp summary::-webkit-details-marker { display: none; }
-
-    .exp-num {
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 0.95rem;
-      width: 2.6rem; height: 2.6rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.7rem;
-      flex-shrink: 0;
-    }
-    .n-blue   { background: var(--blue); color: #fff; }
-    .n-green  { background: var(--green); color: #fff; }
-    .n-coral  { background: var(--coral); color: #fff; }
-    .n-purple { background: var(--purple); color: #fff; }
-    .n-yellow { background: var(--yellow); }
-    .n-pink   { background: var(--pink); }
-
-    .exp-meta { flex: 1; min-width: 0; }
-    .exp-title { font-weight: 700; font-size: 1.08rem; line-height: 1.3; }
-    .exp-co { font-family: var(--font-mono); font-size: 0.8rem; margin-top: 0.15rem; }
-    .exp-date {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      background: var(--paper);
-      border: 2px solid var(--ink);
-      border-radius: 100px;
-      padding: 0.22rem 0.8rem;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .exp-plus {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 1.3rem;
-      width: 2rem;
-      text-align: center;
-      flex-shrink: 0;
-      transition: transform 0.25s;
-    }
-    details.exp[open] .exp-plus { transform: rotate(45deg); }
-    .exp-body {
-      font-size: 0.96rem;
-      border-top: 2px dashed rgba(22,22,22,0.25);
-      margin: 0 1.5rem;
-      padding: 1.1rem 0 1.4rem;
-    }
-    .exp-body b { font-weight: 700; }
-
-    /* ════════ Education ════════ */
-    .edu-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.6rem;
-    }
-    .edu-card {
-      border: var(--bw) solid var(--ink);
-      border-radius: 1rem;
-      padding: 1.8rem 1.6rem;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .edu-card:hover { transform: translate(-3px, -3px) rotate(-0.6deg); box-shadow: 9px 9px 0 var(--ink); }
-    .edu-emoji {
-      font-size: 1.6rem;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.7rem;
-      width: 3.1rem; height: 3.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.1rem;
-      box-shadow: 3px 3px 0 var(--ink);
-    }
-    .edu-degree { font-weight: 700; font-size: 1.02rem; line-height: 1.35; margin-bottom: 0.3rem; }
-    .edu-school { font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; margin-bottom: 0.2rem; }
-    .edu-date {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      background: var(--surface);
-      border: 2px solid var(--ink);
-      border-radius: 100px;
-      padding: 0.18rem 0.7rem;
-      margin: 0.4rem 0 0.9rem;
-    }
-    .edu-note { font-size: 0.9rem; }
-
-    /* ════════ Travel ════════ */
-    .travel-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.8rem;
-    }
-    .postcard {
-      position: relative;
-      border: var(--bw) solid var(--ink);
-      border-radius: 1rem;
-      box-shadow: var(--shadow);
-      overflow: visible;
-      background: var(--surface);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .postcard:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--ink); }
-    .postcard:nth-child(odd)  { transform: rotate(-0.8deg); }
-    .postcard:nth-child(even) { transform: rotate(0.8deg); }
-    .postcard:nth-child(odd):hover  { transform: rotate(-0.8deg) translate(-3px,-3px); }
-    .postcard:nth-child(even):hover { transform: rotate(0.8deg) translate(-3px,-3px); }
-
-    .postcard-band {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.8rem;
-      padding: 1rem 1.4rem;
-      border-bottom: var(--bw) solid var(--ink);
-      border-radius: calc(1rem - var(--bw)) calc(1rem - var(--bw)) 0 0;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 1.25rem;
-    }
-    .postcard-band .flag { font-size: 1.5rem; }
-    .band-green  { background: var(--tint-green); }
-    .band-blue   { background: var(--tint-blue); }
-    .band-coral  { background: var(--coral); color: #fff; }
-    .band-yellow { background: var(--tint-yellow); }
-
-    .postcard-body { padding: 1.3rem 1.4rem 1.6rem; font-size: 0.96rem; }
-
-    .stamp {
-      position: absolute;
-      top: -14px;
-      right: 16px;
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 0.68rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      background: var(--paper);
-      border: 2px dashed var(--ink);
-      border-radius: 0.4rem;
-      padding: 0.3rem 0.7rem;
-      transform: rotate(6deg);
-      box-shadow: 2px 2px 0 var(--ink);
-    }
-    .stamp.fav { background: var(--tint-green); transform: rotate(-5deg); }
-
-    .postcard.wishlist { background: var(--tint-green); border-style: dashed; }
-    .postcard.wishlist .postcard-band { border-bottom-style: dashed; }
-
-    /* ════════ Skills ════════ */
-    .sk-cat { margin-bottom: 2.2rem; }
-    .sk-cat-label {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      display: inline-block;
-      background: var(--ink);
-      color: var(--paper);
-      padding: 0.25rem 0.85rem;
-      border-radius: 0.4rem;
-      margin-bottom: 1rem;
-      transform: rotate(-1deg);
-    }
-    .sk-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
-    .sk {
-      font-weight: 600;
-      font-size: 0.92rem;
-      background: var(--surface);
-      border: var(--bw) solid var(--ink);
-      border-radius: 0.6rem;
-      padding: 0.5rem 1rem;
-      box-shadow: 3px 3px 0 var(--ink);
-      transition: transform 0.15s, box-shadow 0.15s;
-      cursor: default;
-    }
-    .sk:hover { transform: translate(-2px, -2px) rotate(-1.5deg); box-shadow: 5px 5px 0 var(--ink); }
-    .sk-row .sk:nth-child(6n+1) { background: var(--tint-yellow); }
-    .sk-row .sk:nth-child(6n+2) { background: var(--tint-blue); }
-    .sk-row .sk:nth-child(6n+3) { background: var(--tint-green); }
-    .sk-row .sk:nth-child(6n+4) { background: var(--tint-coral); }
-    .sk-row .sk:nth-child(6n+5) { background: var(--tint-purple); }
-    .sk-row .sk:nth-child(6n+6) { background: var(--tint-pink); }
-    .sk-cert {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
-      font-weight: 700;
-      background: var(--tint-green);
-      border: 2px solid var(--ink);
-      border-radius: 100px;
-      padding: 0.4rem 1rem;
-      margin-top: 0.9rem;
-    }
-    .cert-icon { font-size: 1rem; }
-
-    /* ════════ Contact ════════ */
-    #contact { text-align: center; }
-    #contact .sec-title { font-size: clamp(2.6rem, 7vw, 4.5rem); }
-    #contact .sec-sub { margin: 1rem auto 2.4rem; }
-    .contact-btns {
-      display: flex;
-      justify-content: center;
-      gap: 1.1rem;
-      flex-wrap: wrap;
-    }
-    .contact-note {
-      margin-top: 2.2rem;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      display: inline-block;
-      background: var(--surface);
-      border: 2px dashed var(--ink);
-      border-radius: 0.6rem;
-      padding: 0.5rem 1.1rem;
-      transform: rotate(-1deg);
-    }
-
-    /* ════════ Footer ════════ */
-    footer {
-      background: var(--ink);
-      color: var(--paper);
-      text-align: center;
-      padding: 2.2rem 1.5rem;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-    }
-    footer .heart { color: var(--coral); }
-
-    /* ════════ Responsive ════════ */
-    @media (max-width: 880px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
-      .hero-blurb { margin-left: auto; margin-right: auto; }
-      .hero-cta { justify-content: center; }
-      .photo-zone { margin-top: 0.5rem; }
-      .edu-grid { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 768px) {
-      nav.desktop-nav { display: none; }
-      .hamburger { display: flex; }
-      section { padding: 4rem 0; }
-      #hero { padding: 3rem 0 4rem; }
-      .about-grid { grid-template-columns: 1fr; }
-      .travel-grid { grid-template-columns: 1fr; }
-      details.exp summary { flex-wrap: wrap; padding: 1.2rem 1.3rem; gap: 0.9rem 1.1rem; }
-      .exp-date { order: 10; flex-basis: 100%; max-width: max-content; margin-left: 3.7rem; }
-      .exp-body { margin: 0 1.3rem; padding: 1rem 0 1.2rem; }
-      :root { --shadow: 5px 5px 0 var(--ink); }
-    }
-
-    /* ════════ Reduced motion ════════ */
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .marquee-track { animation: none; }
-      .reveal { opacity: 1; transform: none; transition: none; }
-      .hero-chip, h1, .hero-role, .hero-blurb, .hero-cta, .photo-zone { animation: none; }
-      * { transition: none !important; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
-  <!-- ════════ Header ════════ -->
-  <header>
-    <div class="header-inner">
-      <a href="#hero" class="logo">JVO</a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#about">About</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Josh Vera O’Steen, home">JV<span>.</span></a>
+      <nav aria-label="Main navigation">
         <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#travel">Travels</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
       </nav>
-      <button class="hamburger" id="ham" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <a class="button button-outline header-contact" href="#contact">Get in touch</a>
     </div>
   </header>
 
-  <!-- Mobile nav -->
-  <div class="mobile-nav" id="mob-nav" aria-hidden="true">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#travel">Travels</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- ════════ Hero ════════ -->
-  <section id="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <span class="hero-chip">👋 ¡Hola! I'm</span>
-          <h1>Josh <span class="mk mk-green">Vera</span> <span class="mk mk-coral">O'Steen</span></h1>
-          <p class="hero-role"><b>Senior Data Scientist @ Fannie Mae</b> · AI Management grad student @ Georgetown</p>
-          <p class="hero-blurb">I build the machine learning behind how America's homes get valued — and I believe great models need great leadership, sharp questions, and an unreasonable amount of espresso.</p>
-          <div class="hero-cta">
-            <a href="#experience" class="btn btn-green">See my work ↓</a>
-            <a href="#contact" class="btn">Say hello 👋</a>
+  <main id="main" tabindex="-1">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Senior Data Scientist at Fannie Mae</p>
+          <h1 id="hero-title">Josh Vera<br>O’Steen<span>.</span></h1>
+          <p class="hero-intro">I lead development of models that assess mortgage collateral risk and build AI applications for property valuation.</p>
+          <div class="actions">
+            <a class="button button-accent" href="#experience">Explore my work</a>
+            <a class="button button-outline" href="https://www.linkedin.com/in/jvosteen/">LinkedIn</a>
           </div>
         </div>
-        <div class="photo-zone">
-          <div class="photo-frame" id="photo-frame">
-            <div class="tape"></div>
-            <img src="assets/img/me.jpg" alt="Josh Vera O'Steen" onerror="document.getElementById('photo-frame').classList.add('no-photo')">
-            <div class="photo-fallback">
-              <div class="mono-mark">JVO</div>
-              <small>photo loading soon…</small>
+        <figure class="portrait">
+          <div class="portrait-frame">
+            <img src="assets/img/profile.jpg" alt="Josh Vera O’Steen" width="675" height="900" fetchpriority="high">
+          </div>
+          <figcaption>Washington, D.C.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">My work at Fannie Mae</h2>
+          </div>
+          <p>On the Collateral Products &amp; Modeling team, I work on a question at the heart of mortgage lending. How can we better assess the risk of the property that secures a loan?</p>
+        </div>
+
+        <article class="current-role" aria-labelledby="current-role-title">
+          <header class="role-header">
+            <div>
+              <h3 id="current-role-title">Senior Data Science Associate</h3>
+              <p>Fannie Mae</p>
             </div>
-            <div class="photo-caption">josh.jpg — probably caffeinated ☕</div>
-            <div class="sticker s1">📊</div>
-            <div class="sticker s2">☕</div>
-            <div class="sticker s3">🌮</div>
+            <p class="period"><time datetime="2024-09">Sep 2024</time> to present</p>
+          </header>
+          <div class="role-grid">
+            <div>
+              <h4>Collateral risk modeling</h4>
+              <p>Lead development of quantitative models Fannie Mae uses to evaluate property collateral at scale. Own the work from model design through development and validation.</p>
+            </div>
+            <div>
+              <h4>Applied AI for appraisals</h4>
+              <p>Build applications that use large language models and multimodal AI to extract information from property images and support appraisal modernization.</p>
+            </div>
+            <div>
+              <h4>Model adoption and mentorship</h4>
+              <p>Work with stakeholders to explain how models work and support their adoption. Mentor junior data scientists on the team.</p>
+            </div>
+          </div>
+        </article>
+
+        <h3 class="previous-title">Earlier roles</h3>
+        <div class="timeline">
+          <article class="timeline-row">
+            <p class="period"><time datetime="2023-09">Sep 2023</time> to <time datetime="2024-09">Sep 2024</time></p>
+            <div>
+              <h4>Data Science Associate</h4>
+              <p class="company">Fannie Mae</p>
+            </div>
+            <p>Researched appraisal misvaluation for Collateral Policy and Strategy and wrote three research memos on valuation accuracy and risk. Led a project to address misvaluation and mentored a summer intern through delivery.</p>
+          </article>
+          <article class="timeline-row">
+            <p class="period"><time datetime="2022-07">Jul 2022</time> to <time datetime="2023-09">Sep 2023</time></p>
+            <div>
+              <h4>Analytics &amp; Modeling Associate</h4>
+              <p class="company">Fannie Mae</p>
+            </div>
+            <p>Joined through Fannie Mae’s rotational program and completed 11 weeks of training in programming, statistics, and financial modeling before joining Collateral Products &amp; Modeling.</p>
+          </article>
+          <article class="timeline-row">
+            <p class="period"><time datetime="2022-01">Jan</time> to <time datetime="2022-06">Jun 2022</time></p>
+            <div>
+              <h4>Spring Data Analyst</h4>
+              <p class="company">Grassroots Analytics</p>
+            </div>
+            <p>Worked with fundraising strategists to assess campaign operations and build targeted donor lists in Stata for political campaigns across the U.S.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container project-grid">
+        <div class="project-copy">
+          <p class="eyebrow">Personal project</p>
+          <h2 id="projects-title">Touchline<span>.</span></h2>
+          <p class="project-lead">I’m a big soccer fan, so I built a game about reading the pitch.</p>
+          <p>Touchline puts you in match situations through 110 interactive tactics and rules puzzles. Pick a move or make a referee’s call, then see the reasoning behind it.</p>
+          <div class="actions">
+            <a class="button button-accent" href="https://jvosteen.github.io/touchline/">Play Touchline</a>
+            <a class="button button-outline" href="https://github.com/JVOsteen/touchline">View source</a>
+          </div>
+        </div>
+        <div class="project-art">
+          <img src="assets/img/touchline.webp" width="1500" height="900" loading="lazy" decoding="async" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section toolkit" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="eyebrow">Skills &amp; education</p>
+        <h2 id="skills-title">What I bring to the work</h2>
+        <div class="toolkit-grid">
+          <div class="toolkit-panel">
+            <h3>Technical skills</h3>
+            <dl class="skill-list">
+              <div>
+                <dt>Statistics &amp; machine learning</dt>
+                <dd>Python, R, SQL, regression, classification, experimental design, A/B testing</dd>
+              </div>
+              <div>
+                <dt>Applied AI &amp; cloud</dt>
+                <dd>Large language models, multimodal AI, model deployment, data pipelines, AWS S3 and SageMaker</dd>
+              </div>
+              <div>
+                <dt>Domain &amp; leadership</dt>
+                <dd>Collateral risk, property valuation, AI governance, stakeholder communication, mentorship</dd>
+              </div>
+            </dl>
+            <p class="certifications"><strong>AWS certifications</strong> Machine Learning Engineer (Associate), Solutions Architect (Associate), and Cloud Practitioner.</p>
+          </div>
+
+          <div class="toolkit-panel education" id="education">
+            <h3>Education</h3>
+            <div class="degree">
+              <div class="degree-meta">
+                <p>Georgetown University</p>
+                <time class="period" datetime="2027-05">May 2027</time>
+              </div>
+              <h4>Master of Professional Studies in Artificial Intelligence Management</h4>
+              <p>Focus on responsible AI deployment, organizational strategy, and AI governance.</p>
+            </div>
+            <div class="degree">
+              <div class="degree-meta">
+                <p>American University</p>
+                <time class="period" datetime="2022">2022</time>
+              </div>
+              <h4>B.S. in Statistics<br>B.A. in Political Science</h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ════════ Marquee ════════ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Data Science ✦</span><span>Machine Learning ✦</span><span>Coffee Snob ✦</span><span>Statistics ✦</span><span>AI Strategy ✦</span><span>Real Estate Analytics ✦</span><span>Seattle Raised ✦</span><span>CDMX Superfan ✦</span>
-      <span>Data Science ✦</span><span>Machine Learning ✦</span><span>Coffee Snob ✦</span><span>Statistics ✦</span><span>AI Strategy ✦</span><span>Real Estate Analytics ✦</span><span>Seattle Raised ✦</span><span>CDMX Superfan ✦</span>
-    </div>
-  </div>
-
-  <!-- ════════ About ════════ -->
-  <section id="about">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-chip c-green">01 — About</span>
-        <h2 class="sec-title">Equal parts <span class="mk mk-green">rigor</span> and <span class="mk mk-coral">curiosity</span>.</h2>
-        <p class="sec-sub">Statistician by training, political scientist by instinct, data scientist by trade — and a firm believer that the best models are the ones people actually understand.</p>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">A little more about me</h2>
+        </div>
+        <div class="about-copy">
+          <p>I grew up in Seattle, which explains why I take coffee a little too seriously. I still like finding a great bakery, keeping tabs on my favorite restaurants, and talking soccer tactics.</p>
+          <p id="travel">I love to travel, especially when it involves a return trip to Mexico City. I also speak Spanish at a professional level.</p>
+        </div>
       </div>
-      <div class="about-grid">
-        <div class="card bg-blue reveal">
-          <h3><span class="emoji-badge">🧠</span> What I do</h3>
-          <p>On Fannie Mae's <b>Collateral Products &amp; Modeling</b> team, I lead development of the quantitative risk models behind how the company evaluates property collateral at scale. I also work on applying large language models and multimodal AI to extract meaningful signal from property data — part of a broader push to modernize how valuation works. My approach blends machine learning with policy thinking to build models that are accurate, defensible, and actually usable, and I mentor junior data scientists along the way.</p>
+    </section>
+  </main>
+
+  <footer class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s talk<span>.</span></h2>
+          <p>If you’re hiring for data science or applied AI, I’d like to hear what your team is working on.</p>
         </div>
-        <div class="card bg-purple reveal">
-          <h3><span class="emoji-badge">🚀</span> What I'm learning</h3>
-          <p>Pursuing an <b>MPS in AI Management at Georgetown</b>, digging into how organizations deploy AI responsibly and at scale. My take: the future of AI isn't just better models — it's better leadership around those models.</p>
+        <div class="actions">
+          <a class="button button-accent" href="mailto:osteenjv@gmail.com">Email me</a>
+          <a class="button button-outline" href="https://www.linkedin.com/in/jvosteen/">LinkedIn</a>
+          <a class="button button-outline" href="https://github.com/JVOsteen">GitHub</a>
         </div>
-        <div class="card bg-yellow full reveal">
-          <h3><span class="emoji-badge">🌎</span> Off the clock</h3>
-          <p>Raised in <b>Seattle</b>, so the coffee snobbery is genetic. I'm a devoted foodie and <b>Beli</b> power user, always logging the best restaurants, bars, and bakeries wherever I land. I travel every chance I get — <b>Mexico City</b> has my whole heart — and like any good data scientist, I'm endlessly curious. That curiosity is exactly why this website exists.</p>
-          <div class="tag-row">
-            <span class="tag">☕ coffee obsessed</span>
-            <span class="tag">🍜 dedicated foodie</span>
-            <span class="tag">📍 Beli power user</span>
-            <span class="tag">✈️ world traveler</span>
-            <span class="tag">🇲🇽 CDMX devotee</span>
-            <span class="tag">🗣️ habla español</span>
-            <span class="tag">📖 endlessly curious</span>
-          </div>
-        </div>
+      </div>
+      <div class="footer-line">
+        <p>Josh Vera O’Steen</p>
+        <a href="#hero">Back to top</a>
       </div>
     </div>
-  </section>
-
-  <!-- ════════ Experience ════════ -->
-  <section id="experience">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-chip c-coral">02 — Experience</span>
-        <h2 class="sec-title">The <span class="mk mk-blue">work</span> so far.</h2>
-        <p class="sec-sub">From political data analysis to modernizing how homes get valued. Tap any role for the full story.</p>
-      </div>
-      <div class="exp-list">
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-blue">01</span>
-            <span class="exp-meta">
-              <span class="exp-title">Senior Data Science Associate</span><br>
-              <span class="exp-co">Fannie Mae · Washington, D.C.</span>
-            </span>
-            <span class="exp-date">Sept 2024 — Present</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Lead developer on the quantitative risk models at the core of Fannie Mae's collateral evaluation work — the kind of modeling that shapes how property risk is assessed across a large share of the U.S. mortgage market. I also build applied AI systems that use large language models and multimodal techniques to pull meaningful information out of property imagery, advancing how the appraisal process gets modernized. Day to day, that means owning models end to end: design, development, validation, and the stakeholder conversations that get them adopted.
-          </div>
-        </details>
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-green">02</span>
-            <span class="exp-meta">
-              <span class="exp-title">Data Science Associate</span><br>
-              <span class="exp-co">Fannie Mae · Washington, D.C.</span>
-            </span>
-            <span class="exp-date">Sept 2023 — Sept 2024</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Conducted research on <b>appraisal mis-valuation</b> and supported business partners in Collateral Policy and Strategy, authoring three research memos on valuation accuracy and risk. Served as <b>Project Lead</b> on a mis-valuation mitigation initiative, managing and mentoring a summer intern through end-to-end delivery.
-          </div>
-        </details>
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-coral">03</span>
-            <span class="exp-meta">
-              <span class="exp-title">Analytics &amp; Modeling Associate</span><br>
-              <span class="exp-co">Fannie Mae · Washington, D.C.</span>
-            </span>
-            <span class="exp-date">July 2022 — Sept 2023</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Joined through Fannie Mae's competitive rotational program, completing an <b>11-week intensive</b> in programming, statistics, and financial modeling before placing on the Collateral Products &amp; Modeling team — the analytical foundation for everything since.
-          </div>
-        </details>
-
-        <details class="exp reveal">
-          <summary>
-            <span class="exp-num n-purple">04</span>
-            <span class="exp-meta">
-              <span class="exp-title">Spring Data Analyst</span><br>
-              <span class="exp-co">Grassroots Analytics · Washington, D.C.</span>
-            </span>
-            <span class="exp-date">Jan — June 2022</span>
-            <span class="exp-plus">+</span>
-          </summary>
-          <div class="exp-body">
-            Provided <b>fundraising analytics</b> to political campaigns nationwide — assessing campaign operations alongside fundraising strategists, building targeted donor lists in Stata, and delivering insights to maximize funds raised. Data skills meet political science instincts.
-          </div>
-        </details>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ Education ════════ -->
-  <section id="education">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-chip c-purple">03 — Education</span>
-        <h2 class="sec-title">Where <span class="mk mk-green">numbers</span> met <span class="mk mk-blue">ideas</span>.</h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card bg-purple card reveal">
-          <div class="edu-emoji">🤖</div>
-          <div class="edu-degree">Master of Professional Studies · AI Management</div>
-          <div class="edu-school">Georgetown University</div>
-          <span class="edu-date">In progress · Expected 2027</span>
-          <div class="edu-note">Responsible AI deployment, organizational strategy, and AI governance — bridging the gap between building models and leading the people who use them.</div>
-        </div>
-        <div class="edu-card bg-green card reveal">
-          <div class="edu-emoji">📊</div>
-          <div class="edu-degree">Bachelor of Science · Statistics</div>
-          <div class="edu-school">American University</div>
-          <span class="edu-date">Class of 2022</span>
-          <div class="edu-note">Probability, statistical inference, regression — the rigorous quantitative foundation underneath everything I build.</div>
-        </div>
-        <div class="edu-card bg-blue card reveal">
-          <div class="edu-emoji">🏛️</div>
-          <div class="edu-degree">Bachelor of Arts · Political Science</div>
-          <div class="edu-school">American University</div>
-          <span class="edu-date">Class of 2022</span>
-          <div class="edu-note">Systems thinking, policy analysis, and a deep appreciation for how institutions work — and why it matters who controls the data.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ Travel ════════ -->
-  <section id="travel">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-chip c-green">04 — Travels</span>
-        <h2 class="sec-title">Postcards from <span class="mk mk-coral">my map</span>.</h2>
-        <p class="sec-sub">I travel for the food, stay for the coffee, and log all of it on Beli. A few pins that matter most:</p>
-      </div>
-      <div class="travel-grid">
-
-        <div class="postcard reveal">
-          <span class="stamp">Hometown</span>
-          <div class="postcard-band band-green">Seattle, WA <span class="flag">🌲</span></div>
-          <div class="postcard-body">Where the coffee snobbery began. Raised on drizzle and double shots — I've been chasing the perfect cup (and comparing every city's roasters to home) ever since.</div>
-        </div>
-
-        <div class="postcard reveal">
-          <span class="stamp">Home base</span>
-          <div class="postcard-band band-blue">Washington, D.C. <span class="flag">🏛️</span></div>
-          <div class="postcard-body">Current HQ. Modeling home valuations by day, Georgetown classes by night, and hunting down the city's best bakeries on weekends. The Beli log grows ever longer.</div>
-        </div>
-
-        <div class="postcard reveal">
-          <span class="stamp fav">⭐ All-time favorite</span>
-          <div class="postcard-band band-coral">Mexico City <span class="flag">🇲🇽</span></div>
-          <div class="postcard-body">CDMX has my whole heart. Tacos al pastor at midnight, world-class museums by day, café de olla in between. Every visit ends with me checking apartment listings "just out of curiosity."</div>
-        </div>
-
-        <div class="postcard wishlist reveal">
-          <span class="stamp">Up next?</span>
-          <div class="postcard-band band-yellow">Your suggestion <span class="flag">✈️</span></div>
-          <div class="postcard-body">The passport has empty pages and I take recommendations very seriously — especially ones involving food. <a href="mailto:osteenjv@gmail.com?subject=Where%20Josh%20should%20travel%20next" style="font-weight:700; text-decoration:underline;">Tell me where to go next →</a></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ Skills ════════ -->
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-chip c-blue">05 — Skills</span>
-        <h2 class="sec-title">The <span class="mk mk-green">toolkit</span>.</h2>
-      </div>
-
-      <div class="sk-cat reveal">
-        <span class="sk-cat-label">Programming &amp; Data</span>
-        <div class="sk-row">
-          <span class="sk">Python</span>
-          <span class="sk">R</span>
-          <span class="sk">SQL</span>
-          <span class="sk">Stata</span>
-          <span class="sk">Data Visualization</span>
-          <span class="sk">Statistical Modeling</span>
-        </div>
-      </div>
-
-      <div class="sk-cat reveal">
-        <span class="sk-cat-label">Machine Learning &amp; AI</span>
-        <div class="sk-row">
-          <span class="sk">Machine Learning</span>
-          <span class="sk">Regression &amp; Classification</span>
-          <span class="sk">NLP / Text Analysis</span>
-          <span class="sk">A/B Testing</span>
-          <span class="sk">Experimental Design</span>
-          <span class="sk">Large Language Models</span>
-          <span class="sk">Multimodal AI</span>
-          <span class="sk">AI Ethics &amp; Governance</span>
-        </div>
-      </div>
-
-      <div class="sk-cat reveal">
-        <span class="sk-cat-label">Cloud &amp; Infrastructure</span>
-        <div class="sk-row">
-          <span class="sk">AWS (S3, SageMaker)</span>
-          <span class="sk">Model Deployment</span>
-          <span class="sk">Data Pipelines</span>
-          <span class="sk">Cloud ML</span>
-        </div>
-        <div class="sk-cert"><span class="cert-icon">🎓</span> AWS Certified — Machine Learning Engineer (Associate), Solutions Architect (Associate), Cloud Practitioner</div>
-      </div>
-
-      <div class="sk-cat reveal">
-        <span class="sk-cat-label">Domain Expertise</span>
-        <div class="sk-row">
-          <span class="sk">Property Valuation</span>
-          <span class="sk">Collateral Risk Modeling</span>
-          <span class="sk">Real Estate Finance</span>
-          <span class="sk">Applied LLMs / Multimodal AI</span>
-          <span class="sk">Political Data</span>
-          <span class="sk">Consumer Insights</span>
-        </div>
-      </div>
-
-      <div class="sk-cat reveal">
-        <span class="sk-cat-label">Leadership &amp; Communication</span>
-        <div class="sk-row">
-          <span class="sk">Technical Writing</span>
-          <span class="sk">Project Management</span>
-          <span class="sk">Mentorship</span>
-          <span class="sk">Cross-functional Collaboration</span>
-          <span class="sk">Stakeholder Communication</span>
-          <span class="sk">Spanish (Professional)</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ Marquee 2 ════════ -->
-  <div class="marquee alt" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Tacos al Pastor ✦</span><span>Espresso ✦</span><span>Bakeries ✦</span><span>Café de Olla ✦</span><span>Beli Top Spots ✦</span><span>Window Seats ✦</span><span>New Cities ✦</span><span>Good Questions ✦</span>
-      <span>Tacos al Pastor ✦</span><span>Espresso ✦</span><span>Bakeries ✦</span><span>Café de Olla ✦</span><span>Beli Top Spots ✦</span><span>Window Seats ✦</span><span>New Cities ✦</span><span>Good Questions ✦</span>
-    </div>
-  </div>
-
-  <!-- ════════ Contact ════════ -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="reveal">
-        <span class="sec-chip c-pink">06 — Contact</span>
-        <h2 class="sec-title">Let's <span class="mk mk-green">talk</span>.</h2>
-        <p class="sec-sub" style="margin-left:auto; margin-right:auto;">Data science, AI strategy, real estate analytics — or just your favorite coffee shop. My inbox is open.</p>
-      </div>
-      <div class="contact-btns reveal">
-        <a href="mailto:osteenjv@gmail.com" class="btn btn-yellow">✉️ Email me</a>
-        <a href="https://linkedin.com/in/jvosteen" target="_blank" rel="noopener" class="btn btn-blue">💼 LinkedIn</a>
-        <a href="https://github.com/jvosteen" target="_blank" rel="noopener" class="btn btn-ink">🐙 GitHub</a>
-      </div>
-      <div class="reveal">
-        <span class="contact-note">☕ coffee shop recommendations get priority response</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ Footer ════════ -->
-  <footer>
-    Built with curiosity <span class="heart">♥</span> (and several espressos) by Josh Vera O'Steen · © 2026
   </footer>
-
-  <!-- ════════ JavaScript ════════ -->
-  <script>
-    /* ── Mobile menu ── */
-    var ham = document.getElementById('ham');
-    var mobNav = document.getElementById('mob-nav');
-
-    function toggleMenu(force) {
-      var open = (force !== undefined) ? force : !ham.classList.contains('open');
-      ham.classList.toggle('open', open);
-      mobNav.classList.toggle('open', open);
-      ham.setAttribute('aria-expanded', String(open));
-      mobNav.setAttribute('aria-hidden', String(!open));
-      document.body.style.overflow = open ? 'hidden' : '';
-    }
-    ham.addEventListener('click', function () { toggleMenu(); });
-    mobNav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { toggleMenu(false); });
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && ham.classList.contains('open')) toggleMenu(false);
-    });
-
-    /* ── Reveal on scroll ── */
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal').forEach(function (el) {
-      var siblings = el.parentElement.querySelectorAll('.reveal');
-      var idx = Array.prototype.indexOf.call(siblings, el);
-      if (idx > 0) el.style.transitionDelay = (idx * 0.07) + 's';
-      observer.observe(el);
-    });
-  </script>
-
 </body>
 </html>
